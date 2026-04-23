@@ -25,11 +25,11 @@
   .eco-card { background: #fff; border: 1px solid #e8e7df; border-radius: 10px; padding: 13px 15px; cursor: pointer; transition: all 0.15s; }
   .eco-card:hover { border-color: #bbb; transform: translateY(-1px); box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
   .eco-card.active { border-color: #3b5bdb; background: #eef2ff; }
-  .eco-card.vera-card { border-color: #74c0fc; background: #e7f5ff; }
-  .eco-card.vera-card.active { border-color: #1c7ed6; background: #d0ebff; }
+  .eco-card.asgard-card { border-color: #74c0fc; background: #e7f5ff; }
+  .eco-card.asgard-card.active { border-color: #1c7ed6; background: #d0ebff; }
   .card-name { font-size: 13.5px; font-weight: 600; color: #1a1a1a; margin-bottom: 3px; }
   .card-role { font-size: 12px; color: #666; }
-  .vera-badge { display: inline-block; font-size: 10px; font-weight: 600; background: #1c7ed6; color: #fff; border-radius: 4px; padding: 1px 5px; margin-left: 5px; vertical-align: middle; }
+  .asgard-badge { display: inline-block; font-size: 10px; font-weight: 600; background: #1c7ed6; color: #fff; border-radius: 4px; padding: 1px 5px; margin-left: 5px; vertical-align: middle; }
 
   /* Detail pane */
   .detail-pane { margin-top: 20px; background: #fff; border-radius: 12px; border: 1px solid #e8e7df; padding: 20px 22px; min-height: 80px; }
@@ -40,7 +40,7 @@
   .detail-tagline { font-size: 13px; color: #3b5bdb; font-weight: 500; margin-top: 2px; }
   .detail-body { font-size: 14px; color: #333; line-height: 1.7; }
   .detail-analogy { margin-top: 12px; background: #f8f8f4; border-left: 3px solid #3b5bdb; padding: 10px 14px; border-radius: 0 8px 8px 0; font-size: 13.5px; color: #444; }
-  .vera-note { margin-top: 10px; background: #e7f5ff; border-left: 3px solid #1c7ed6; padding: 9px 13px; border-radius: 0 8px 8px 0; font-size: 13px; color: #1864ab; }
+  .asgard-note { margin-top: 10px; background: #e7f5ff; border-left: 3px solid #1c7ed6; padding: 9px 13px; border-radius: 0 8px 8px 0; font-size: 13px; color: #1864ab; }
   .extra-examples { margin-top: 10px; }
   .extra-examples strong { font-size: 12.5px; color: #888; display: block; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.05em; }
   .example-pill { display: inline-block; background: #f0f0eb; border-radius: 20px; padding: 3px 10px; font-size: 12px; color: #555; margin: 2px; }
@@ -71,7 +71,7 @@
   .cost-total-label { font-weight: 600; font-size: 14px; color: #1a1a1a; }
   .cost-total-amount { font-weight: 700; font-size: 15px; color: #3b5bdb; }
   .bearer-badge { display: inline-block; font-size: 10.5px; font-weight: 600; padding: 2px 7px; border-radius: 4px; margin-left: 5px; }
-  .bearer-vera { background: #e7f5ff; color: #1c7ed6; }
+  .bearer-asgard { background: #e7f5ff; color: #1c7ed6; }
   .bearer-finwise { background: #fff0f6; color: #c2255c; }
   .bearer-shared { background: #f8f0fc; color: #862e9c; }
 
@@ -123,43 +123,43 @@
 <!-- TAB 1: ECOSYSTEM -->
 <div class="tab-panel active" id="tab-ecosystem">
   <h1 class="page-title">The Complete Credit Card Fintech Ecosystem</h1>
-  <p class="page-sub">Every layer a credit card company needs. Cards in <span style="background:#e7f5ff;color:#1864ab;border-radius:4px;padding:1px 6px;font-size:12px;font-weight:600">blue</span> are Vera's actual partners. Click any card to learn more.</p>
+  <p class="page-sub">Every layer a credit card company needs. Cards in <span style="background:#e7f5ff;color:#1864ab;border-radius:4px;padding:1px 6px;font-size:12px;font-weight:600">blue</span> are Asgard's actual partners. Click any card to learn more.</p>
 
-  <div class="callout blue">💡 <strong>Is Vera's setup complete?</strong> Vera's stack is lean and modern — typical for a new fintech in 2025. They've cleverly chosen Zeta which covers a lot of ground (processing + rewards + servicing). A larger, more mature program would add layers like a dedicated AML engine, a core banking ledger, a CRM, a marketing tech stack, and a direct payment rails provider like <strong>TabaPay</strong>.</div>
+  <div class="callout blue">💡 <strong>Is Asgard's setup complete?</strong> Asgard's stack is lean and modern — typical for a new fintech in 2025. They've cleverly chosen Zeta which covers a lot of ground (processing + rewards + servicing). A larger, more mature program would add layers like a dedicated AML engine, a core banking ledger, a CRM, a marketing tech stack, and a direct payment rails provider like <strong>TabaPay</strong>.</div>
 
   <div class="section-title">Layer 1 — The Legal Foundation</div>
   <div class="card-grid">
-    <div class="eco-card vera-card" onclick="showDetail('finwise')"><div class="card-name">FinWise Bank <span class="vera-badge">Vera</span></div><div class="card-role">BIN Sponsor / Issuing Bank</div></div>
+    <div class="eco-card asgard-card" onclick="showDetail('finwise')"><div class="card-name">FinWise Bank <span class="asgard-badge">Asgard</span></div><div class="card-role">BIN Sponsor / Issuing Bank</div></div>
     <div class="eco-card" onclick="showDetail('occ')"><div class="card-name">OCC / Federal Reserve</div><div class="card-role">Bank regulator (supervises FinWise)</div></div>
   </div>
 
   <div class="section-title">Layer 2 — Payment Network</div>
   <div class="card-grid">
-    <div class="eco-card vera-card" onclick="showDetail('mastercard')"><div class="card-name">Mastercard <span class="vera-badge">Vera</span></div><div class="card-role">Card network & payment rails</div></div>
+    <div class="eco-card asgard-card" onclick="showDetail('mastercard')"><div class="card-name">Mastercard <span class="asgard-badge">Asgard</span></div><div class="card-role">Card network & payment rails</div></div>
     <div class="eco-card" onclick="showDetail('visa')"><div class="card-name">Visa</div><div class="card-role">Alternative card network</div></div>
     <div class="eco-card" onclick="showDetail('tabapay')"><div class="card-name">TabaPay</div><div class="card-role">Payment rails & money movement</div></div>
   </div>
 
   <div class="section-title">Layer 3 — Identity & Onboarding</div>
   <div class="card-grid">
-    <div class="eco-card vera-card" onclick="showDetail('socure')"><div class="card-name">Socure <span class="vera-badge">Vera</span></div><div class="card-role">Identity verification (KYC)</div></div>
+    <div class="eco-card asgard-card" onclick="showDetail('socure')"><div class="card-name">Socure <span class="asgard-badge">Asgard</span></div><div class="card-role">Identity verification (KYC)</div></div>
     <div class="eco-card" onclick="showDetail('alloy')"><div class="card-name">Alloy / Persona</div><div class="card-role">KYC orchestration platforms</div></div>
     <div class="eco-card" onclick="showDetail('jumio')"><div class="card-name">Jumio</div><div class="card-role">Document & biometric verification</div></div>
   </div>
 
   <div class="section-title">Layer 4 — Credit Decisioning</div>
   <div class="card-grid">
-    <div class="eco-card vera-card" onclick="showDetail('transunion')"><div class="card-name">TransUnion <span class="vera-badge">Vera</span></div><div class="card-role">Credit bureau</div></div>
+    <div class="eco-card asgard-card" onclick="showDetail('transunion')"><div class="card-name">TransUnion <span class="asgard-badge">Asgard</span></div><div class="card-role">Credit bureau</div></div>
     <div class="eco-card" onclick="showDetail('experian')"><div class="card-name">Experian / Equifax</div><div class="card-role">Other major credit bureaus</div></div>
-    <div class="eco-card vera-card" onclick="showDetail('finicity')"><div class="card-name">Finicity <span class="vera-badge">Vera</span></div><div class="card-role">Open banking / bank data</div></div>
+    <div class="eco-card asgard-card" onclick="showDetail('finicity')"><div class="card-name">Finicity <span class="asgard-badge">Asgard</span></div><div class="card-role">Open banking / bank data</div></div>
     <div class="eco-card" onclick="showDetail('plaid')"><div class="card-name">Plaid</div><div class="card-role">Alternative bank data connector</div></div>
-    <div class="eco-card vera-card" onclick="showDetail('digifi')"><div class="card-name">DigiFi <span class="vera-badge">Vera</span></div><div class="card-role">Loan origination system (LOS)</div></div>
+    <div class="eco-card asgard-card" onclick="showDetail('digifi')"><div class="card-name">DigiFi <span class="asgard-badge">Asgard</span></div><div class="card-role">Loan origination system (LOS)</div></div>
     <div class="eco-card" onclick="showDetail('marqeta_dec')"><div class="card-name">Marqeta / Blend</div><div class="card-role">Alternative origination platforms</div></div>
   </div>
 
   <div class="section-title">Layer 5 — Core Card Processing</div>
   <div class="card-grid">
-    <div class="eco-card vera-card" onclick="showDetail('zeta')"><div class="card-name">Zeta Tachyon <span class="vera-badge">Vera</span></div><div class="card-role">Modern card processing platform</div></div>
+    <div class="eco-card asgard-card" onclick="showDetail('zeta')"><div class="card-name">Zeta Tachyon <span class="asgard-badge">Asgard</span></div><div class="card-role">Modern card processing platform</div></div>
     <div class="eco-card" onclick="showDetail('fiserv')"><div class="card-name">Fiserv / FIS</div><div class="card-role">Legacy card processors</div></div>
     <div class="eco-card" onclick="showDetail('tsys')"><div class="card-name">TSYS (Global Payments)</div><div class="card-role">Card processing & issuing</div></div>
     <div class="eco-card" onclick="showDetail('marqeta')"><div class="card-name">Marqeta</div><div class="card-role">Modern card issuing platform</div></div>
@@ -167,7 +167,7 @@
 
   <div class="section-title">Layer 6 — Fraud & Risk</div>
   <div class="card-grid">
-    <div class="eco-card vera-card" onclick="showDetail('featurespace')"><div class="card-name">Featurespace <span class="vera-badge">Vera</span></div><div class="card-role">AI fraud detection engine</div></div>
+    <div class="eco-card asgard-card" onclick="showDetail('featurespace')"><div class="card-name">Featurespace <span class="asgard-badge">Asgard</span></div><div class="card-role">AI fraud detection engine</div></div>
     <div class="eco-card" onclick="showDetail('sardine')"><div class="card-name">Sardine</div><div class="card-role">Fraud & compliance AI platform</div></div>
     <div class="eco-card" onclick="showDetail('kount')"><div class="card-name">Kount / Sift</div><div class="card-role">Transaction risk scoring</div></div>
   </div>
@@ -181,10 +181,10 @@
 
   <div class="section-title">Layer 8 — Physical Card & Customer Ops</div>
   <div class="card-grid">
-    <div class="eco-card vera-card" onclick="showDetail('metro')"><div class="card-name">Metrocompanies <span class="vera-badge">Vera</span></div><div class="card-role">Card manufacturing & fulfillment</div></div>
+    <div class="eco-card asgard-card" onclick="showDetail('metro')"><div class="card-name">Metrocompanies <span class="asgard-badge">Asgard</span></div><div class="card-role">Card manufacturing & fulfillment</div></div>
     <div class="eco-card" onclick="showDetail('idemia')"><div class="card-name">IDEMIA / CPI</div><div class="card-role">Other card manufacturers</div></div>
-    <div class="eco-card vera-card" onclick="showDetail('awsconnect')"><div class="card-name">AWS Connect <span class="vera-badge">Vera</span></div><div class="card-role">Cloud contact center</div></div>
-    <div class="eco-card vera-card" onclick="showDetail('firstsource')"><div class="card-name">Firstsource <span class="vera-badge">Vera</span></div><div class="card-role">Customer service & collections BPO</div></div>
+    <div class="eco-card asgard-card" onclick="showDetail('awsconnect')"><div class="card-name">AWS Connect <span class="asgard-badge">Asgard</span></div><div class="card-role">Cloud contact center</div></div>
+    <div class="eco-card asgard-card" onclick="showDetail('firstsource')"><div class="card-name">Firstsource <span class="asgard-badge">Asgard</span></div><div class="card-role">Customer service & collections BPO</div></div>
   </div>
 
   <div class="section-title">Layer 9 — Funding the Loans (Capital)</div>
@@ -205,7 +205,7 @@
     </div>
     <div class="detail-body" id="d-body"></div>
     <div class="detail-analogy" id="d-analogy"></div>
-    <div class="vera-note" id="d-vera" style="display:none"></div>
+    <div class="asgard-note" id="d-asgard" style="display:none"></div>
     <div class="extra-examples" id="d-examples" style="display:none">
       <strong>Other vendors in this space</strong>
       <div id="d-example-pills"></div>
@@ -218,7 +218,7 @@
   <h1 class="page-title">How Does Everyone Make Money?</h1>
   <p class="page-sub">Every partner in the chain earns revenue differently. Here's how the economics work — using a simplified example of a cardholder who spends $1,000/month.</p>
 
-  <div class="callout green">💳 <strong>The $1,000 swipe cascade:</strong> When you spend $1,000 on your Vera card at merchants, the merchant actually pays about $25 in total fees (~2.5%). That $25 flows through the whole ecosystem. Here's who gets what.</div>
+  <div class="callout green">💳 <strong>The $1,000 swipe cascade:</strong> When you spend $1,000 on your Asgard card at merchants, the merchant actually pays about $25 in total fees (~2.5%). That $25 flows through the whole ecosystem. Here's who gets what.</div>
 
   <table class="money-table">
     <thead>
@@ -231,7 +231,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><div class="entity-name">Vera (Program Manager)</div></div></td>
+        <td><div class="entity-name">Asgard (Program Manager)</div></div></td>
         <td>
           <div class="revenue-type">Interchange share</div>
           <div class="revenue-type">Interest (APR)</div>
@@ -242,20 +242,20 @@
           <div class="revenue-amount">~$40–50/mo interest*</div>
           <div class="revenue-note">*if customer revolves</div>
         </td>
-        <td style="font-size:13px;color:#555">Vera gets ~60–80% of interchange the bank earns. Vera also earns interest on unpaid balances (typically 22–29% APR). This is the big revenue source long term. Late fees, foreign transaction fees are extra.</td>
+        <td style="font-size:13px;color:#555">Asgard gets ~60–80% of interchange the bank earns. Asgard also earns interest on unpaid balances (typically 22–29% APR). This is the big revenue source long term. Late fees, foreign transaction fees are extra.</td>
       </tr>
       <tr>
         <td><div class="entity-name">FinWise Bank</div></td>
         <td>
           <div class="revenue-type">Interchange retention</div>
-          <div class="revenue-type">Program fees from Vera</div>
+          <div class="revenue-type">Program fees from Asgard</div>
           <div class="revenue-type">Interest on credit risk they hold</div>
         </td>
         <td>
           <div class="revenue-amount">~$2–5/mo</div>
           <div class="revenue-amount">+ monthly program fee</div>
         </td>
-        <td style="font-size:13px;color:#555">FinWise keeps a small slice of interchange (~10–20%) and charges Vera a program management fee. They also may hold a portion of the credit risk and earn interest on balances they retain.</td>
+        <td style="font-size:13px;color:#555">FinWise keeps a small slice of interchange (~10–20%) and charges Asgard a program management fee. They also may hold a portion of the credit risk and earn interest on balances they retain.</td>
       </tr>
       <tr>
         <td><div class="entity-name">Mastercard</div></td>
@@ -279,19 +279,19 @@
           <div class="revenue-amount">~$0.10–0.25 per account/mo</div>
           <div class="revenue-amount">+ fraction of a cent/txn</div>
         </td>
-        <td style="font-size:13px;color:#555">Zeta charges Vera a base SaaS fee plus a per-account-per-month fee that scales with Vera's card base. They also earn a tiny per-transaction processing fee. Revenue grows as Vera scales.</td>
+        <td style="font-size:13px;color:#555">Zeta charges Asgard a base SaaS fee plus a per-account-per-month fee that scales with Asgard's card base. They also earn a tiny per-transaction processing fee. Revenue grows as Asgard scales.</td>
       </tr>
       <tr>
         <td><div class="entity-name">TransUnion</div></td>
         <td><div class="revenue-type">Per credit pull fee</div></td>
         <td><div class="revenue-amount">$0.50–$3 per application</div></td>
-        <td style="font-size:13px;color:#555">Every time someone applies for a Vera card, TransUnion charges for delivering that person's credit report. Millions of pulls = significant revenue for bureaus.</td>
+        <td style="font-size:13px;color:#555">Every time someone applies for a Asgard card, TransUnion charges for delivering that person's credit report. Millions of pulls = significant revenue for bureaus.</td>
       </tr>
       <tr>
         <td><div class="entity-name">Socure</div></td>
         <td><div class="revenue-type">Per-verification API call</div></td>
         <td><div class="revenue-amount">$0.10–$1.50 per applicant</div></td>
-        <td style="font-size:13px;color:#555">Socure charges Vera each time it runs an identity check on an applicant. Price depends on which services are used (basic KYC vs. full document verification with selfie matching).</td>
+        <td style="font-size:13px;color:#555">Socure charges Asgard each time it runs an identity check on an applicant. Price depends on which services are used (basic KYC vs. full document verification with selfie matching).</td>
       </tr>
       <tr>
         <td><div class="entity-name">Finicity (Mastercard OB)</div></td>
@@ -303,7 +303,7 @@
         <td><div class="entity-name">DigiFi</div></td>
         <td><div class="revenue-type">SaaS license fee</div></td>
         <td><div class="revenue-amount">~$2,000–$15,000/month flat</div></td>
-        <td style="font-size:13px;color:#555">DigiFi charges a monthly SaaS license fee to Vera for the loan origination system, regardless of volume. Often negotiated with volume discounts as Vera scales up applications.</td>
+        <td style="font-size:13px;color:#555">DigiFi charges a monthly SaaS license fee to Asgard for the loan origination system, regardless of volume. Often negotiated with volume discounts as Asgard scales up applications.</td>
       </tr>
       <tr>
         <td><div class="entity-name">Featurespace</div></td>
@@ -320,30 +320,30 @@
         <td><div class="entity-name">TabaPay</div></td>
         <td><div class="revenue-type">Per-transaction rails fee</div></td>
         <td><div class="revenue-amount">$0.01–$0.25 per payment move</div></td>
-        <td style="font-size:13px;color:#555">TabaPay charges Vera each time money moves — when a customer makes a bill payment toward their balance, when Vera disburses a refund, or moves funds between accounts. Very high volume, small per-transaction fee.</td>
+        <td style="font-size:13px;color:#555">TabaPay charges Asgard each time money moves — when a customer makes a bill payment toward their balance, when Asgard disburses a refund, or moves funds between accounts. Very high volume, small per-transaction fee.</td>
       </tr>
       <tr>
         <td><div class="entity-name">Metrocompanies</div></td>
         <td><div class="revenue-type">Per-card manufacturing & fulfillment</div></td>
         <td><div class="revenue-amount">$2–$5 per card produced</div></td>
-        <td style="font-size:13px;color:#555">Metro charges Vera for each physical card manufactured, personalized, and mailed — including the card stock, chip, packaging, and postage. Volume discounts apply at scale.</td>
+        <td style="font-size:13px;color:#555">Metro charges Asgard for each physical card manufactured, personalized, and mailed — including the card stock, chip, packaging, and postage. Volume discounts apply at scale.</td>
       </tr>
       <tr>
         <td><div class="entity-name">AWS Connect</div></td>
         <td><div class="revenue-type">Per-minute usage pricing</div></td>
         <td><div class="revenue-amount">$0.018–$0.08 per minute of calls</div></td>
-        <td style="font-size:13px;color:#555">Amazon charges Vera for every minute of inbound/outbound customer calls routed through AWS Connect, plus fees for AI features like voice bots and call analytics. Pay-as-you-go model scales with volume.</td>
+        <td style="font-size:13px;color:#555">Amazon charges Asgard for every minute of inbound/outbound customer calls routed through AWS Connect, plus fees for AI features like voice bots and call analytics. Pay-as-you-go model scales with volume.</td>
       </tr>
       <tr>
         <td><div class="entity-name">Firstsource</div></td>
         <td><div class="revenue-type">Per-FTE outsourcing contract</div><div class="revenue-type">Collections success fee</div></td>
         <td><div class="revenue-amount">Per-agent monthly contract</div><div class="revenue-amount">+ % of debt recovered</div></td>
-        <td style="font-size:13px;color:#555">Vera pays Firstsource a monthly contract for a dedicated team of agents. For collections, Firstsource may also earn a success fee — a percentage of the overdue balances they successfully recover. This aligns incentives.</td>
+        <td style="font-size:13px;color:#555">Asgard pays Firstsource a monthly contract for a dedicated team of agents. For collections, Firstsource may also earn a success fee — a percentage of the overdue balances they successfully recover. This aligns incentives.</td>
       </tr>
     </tbody>
   </table>
 
-  <div class="callout orange" style="margin-top:20px">⚠️ <strong>The core tension:</strong> Vera's most profitable customers are those who carry a balance (paying 22–29% APR). But its best customers for card spend & rewards are those who pay in full each month. Most credit card fintechs need BOTH types: transactors (who spend a lot, generating interchange) and revolvers (who carry balances, generating interest). Finding the right mix is the heart of credit card strategy.</div>
+  <div class="callout orange" style="margin-top:20px">⚠️ <strong>The core tension:</strong> Asgard's most profitable customers are those who carry a balance (paying 22–29% APR). But its best customers for card spend & rewards are those who pay in full each month. Most credit card fintechs need BOTH types: transactors (who spend a lot, generating interchange) and revolvers (who carry balances, generating interest). Finding the right mix is the heart of credit card strategy.</div>
 </div>
 
 <!-- TAB 3: COSTS -->
@@ -351,23 +351,23 @@
   <h1 class="page-title">What Does It Cost to Launch?</h1>
   <p class="page-sub">Starting a credit card fintech has two very different cost buckets: <strong>operational startup costs</strong> (building the business) and <strong>capital costs</strong> (the actual money to lend). Both are substantial.</p>
 
-  <div class="callout purple">🏦 <strong>Key insight on who bears what cost:</strong> Vera bears most technology and operational costs. FinWise Bank funds some of the initial credit risk/capital. Venture investors fund Vera's operations until it's profitable. The division of cost is negotiated in the bank partnership agreement — and it significantly affects Vera's economics.</div>
+  <div class="callout purple">🏦 <strong>Key insight on who bears what cost:</strong> Asgard bears most technology and operational costs. FinWise Bank funds some of the initial credit risk/capital. Venture investors fund Asgard's operations until it's profitable. The division of cost is negotiated in the bank partnership agreement — and it significantly affects Asgard's economics.</div>
 
   <!-- OPEX -->
   <div class="cost-section">
     <div class="cost-header">
       <div class="cost-title">💻 Technology & Integration Costs (One-time Setup)</div>
-      <div class="cost-subtitle">Paid by Vera — building the platform and connecting all the partners</div>
+      <div class="cost-subtitle">Paid by Asgard — building the platform and connecting all the partners</div>
     </div>
     <div class="cost-body">
       <div class="cost-row">
         <div>
           <div class="cost-item">Zeta Tachyon — platform integration & setup</div>
-          <div class="cost-item-note">Engineering effort to connect Vera's app to Zeta's APIs; certification with Mastercard</div>
+          <div class="cost-item-note">Engineering effort to connect Asgard's app to Zeta's APIs; certification with Mastercard</div>
         </div>
         <div>
           <div class="cost-amount">$300K – $800K</div>
-          <div class="cost-bearer"><span class="bearer-badge bearer-vera">Vera</span></div>
+          <div class="cost-bearer"><span class="bearer-badge bearer-asgard">Asgard</span></div>
         </div>
       </div>
       <div class="cost-row">
@@ -377,7 +377,7 @@
         </div>
         <div>
           <div class="cost-amount">$400K – $1.5M</div>
-          <div class="cost-bearer"><span class="bearer-badge bearer-vera">Vera</span></div>
+          <div class="cost-bearer"><span class="bearer-badge bearer-asgard">Asgard</span></div>
         </div>
       </div>
       <div class="cost-row">
@@ -387,7 +387,7 @@
         </div>
         <div>
           <div class="cost-amount">$50K – $200K</div>
-          <div class="cost-bearer"><span class="bearer-badge bearer-vera">Vera</span></div>
+          <div class="cost-bearer"><span class="bearer-badge bearer-asgard">Asgard</span></div>
         </div>
       </div>
       <div class="cost-row">
@@ -397,7 +397,7 @@
         </div>
         <div>
           <div class="cost-amount">$100K – $300K</div>
-          <div class="cost-bearer"><span class="bearer-badge bearer-vera">Vera</span></div>
+          <div class="cost-bearer"><span class="bearer-badge bearer-asgard">Asgard</span></div>
         </div>
       </div>
       <div class="cost-row">
@@ -417,7 +417,7 @@
         </div>
         <div>
           <div class="cost-amount">$30K – $100K</div>
-          <div class="cost-bearer"><span class="bearer-badge bearer-vera">Vera</span></div>
+          <div class="cost-bearer"><span class="bearer-badge bearer-asgard">Asgard</span></div>
         </div>
       </div>
     </div>
@@ -441,7 +441,7 @@
         </div>
         <div>
           <div class="cost-amount">$100K – $400K</div>
-          <div class="cost-bearer"><span class="bearer-badge bearer-vera">Vera</span></div>
+          <div class="cost-bearer"><span class="bearer-badge bearer-asgard">Asgard</span></div>
         </div>
       </div>
       <div class="cost-row">
@@ -451,7 +451,7 @@
         </div>
         <div>
           <div class="cost-amount">$150K – $500K</div>
-          <div class="cost-bearer"><span class="bearer-badge bearer-vera">Vera</span></div>
+          <div class="cost-bearer"><span class="bearer-badge bearer-asgard">Asgard</span></div>
         </div>
       </div>
       <div class="cost-row">
@@ -461,17 +461,17 @@
         </div>
         <div>
           <div class="cost-amount">$50K – $200K</div>
-          <div class="cost-bearer"><span class="bearer-badge bearer-vera">Vera</span></div>
+          <div class="cost-bearer"><span class="bearer-badge bearer-asgard">Asgard</span></div>
         </div>
       </div>
       <div class="cost-row">
         <div>
           <div class="cost-item">FinWise due diligence & onboarding fees</div>
-          <div class="cost-item-note">FinWise charges Vera for the extensive compliance review they must do before launching</div>
+          <div class="cost-item-note">FinWise charges Asgard for the extensive compliance review they must do before launching</div>
         </div>
         <div>
           <div class="cost-amount">$50K – $150K</div>
-          <div class="cost-bearer"><span class="bearer-badge bearer-vera">Vera</span></div>
+          <div class="cost-bearer"><span class="bearer-badge bearer-asgard">Asgard</span></div>
         </div>
       </div>
     </div>
@@ -495,7 +495,7 @@
         </div>
         <div>
           <div class="cost-amount">$800K – $2M/year</div>
-          <div class="cost-bearer"><span class="bearer-badge bearer-vera">Vera</span></div>
+          <div class="cost-bearer"><span class="bearer-badge bearer-asgard">Asgard</span></div>
         </div>
       </div>
       <div class="cost-row">
@@ -505,7 +505,7 @@
         </div>
         <div>
           <div class="cost-amount">$700K – $1.5M/year</div>
-          <div class="cost-bearer"><span class="bearer-badge bearer-vera">Vera</span></div>
+          <div class="cost-bearer"><span class="bearer-badge bearer-asgard">Asgard</span></div>
         </div>
       </div>
       <div class="cost-row">
@@ -515,7 +515,7 @@
         </div>
         <div>
           <div class="cost-amount">$500K – $2M/year</div>
-          <div class="cost-bearer"><span class="bearer-badge bearer-vera">Vera</span></div>
+          <div class="cost-bearer"><span class="bearer-badge bearer-asgard">Asgard</span></div>
         </div>
       </div>
       <div class="cost-row">
@@ -525,7 +525,7 @@
         </div>
         <div>
           <div class="cost-amount">$300K – $800K/year</div>
-          <div class="cost-bearer"><span class="bearer-badge bearer-vera">Vera</span></div>
+          <div class="cost-bearer"><span class="bearer-badge bearer-asgard">Asgard</span></div>
         </div>
       </div>
     </div>
@@ -539,27 +539,27 @@
   <div class="cost-section">
     <div class="cost-header">
       <div class="cost-title">💵 Capital Costs — The Big One (Funding the Actual Credit)</div>
-      <div class="cost-subtitle">This is NOT operational spend — it's the money Vera needs to actually lend to cardholders</div>
+      <div class="cost-subtitle">This is NOT operational spend — it's the money Asgard needs to actually lend to cardholders</div>
     </div>
     <div class="cost-body">
       <div class="cost-row">
         <div>
           <div class="cost-item">Initial credit facility / loan capital</div>
-          <div class="cost-item-note">If Vera has 10,000 customers each with a $2,000 average balance, Vera needs $20M of capital to fund those balances. This scales rapidly.</div>
+          <div class="cost-item-note">If Asgard has 10,000 customers each with a $2,000 aasgardge balance, Asgard needs $20M of capital to fund those balances. This scales rapidly.</div>
         </div>
         <div>
           <div class="cost-amount">$10M – $100M+</div>
-          <div class="cost-bearer"><span class="bearer-badge bearer-shared">Vera + FinWise</span></div>
+          <div class="cost-bearer"><span class="bearer-badge bearer-shared">Asgard + FinWise</span></div>
         </div>
       </div>
       <div class="cost-row">
         <div>
           <div class="cost-item">Reserve requirement from FinWise</div>
-          <div class="cost-item-note">FinWise requires Vera to deposit a "reserve" as protection against losses — typically 3–10% of credit outstanding</div>
+          <div class="cost-item-note">FinWise requires Asgard to deposit a "reserve" as protection against losses — typically 3–10% of credit outstanding</div>
         </div>
         <div>
           <div class="cost-amount">$1M – $5M</div>
-          <div class="cost-bearer"><span class="bearer-badge bearer-vera">Vera</span></div>
+          <div class="cost-bearer"><span class="bearer-badge bearer-asgard">Asgard</span></div>
         </div>
       </div>
       <div class="cost-row">
@@ -580,11 +580,11 @@
   </div>
 
   <div class="callout blue" style="margin-top:4px">
-    📊 <strong>Total picture for Vera to launch:</strong><br><br>
-    • <strong>Sandeep's team needs to raise from VCs:</strong> roughly <strong>$5M–$15M Series A</strong> to cover technology, team, compliance, and initial operations.<br><br>
+    📊 <strong>Total picture for Asgard to launch:</strong><br><br>
+    • <strong>Amitkumar's team needs to raise from VCs:</strong> roughly <strong>$5M–$15M Series A</strong> to cover technology, team, compliance, and initial operations.<br><br>
     • <strong>Separately, they need a credit facility:</strong> a debt round of <strong>$20M–$100M+</strong> from a specialty lender or institutional investor to actually fund cardholder balances. This debt is backed by the receivables (people's credit card balances).<br><br>
-    • <strong>FinWise contributes</strong> their balance sheet, banking license, regulatory coverage, and initial program support — their "cost" is the risk they take on and the capital they deploy.<br><br>
-    • <strong>Time to launch:</strong> 12–24 months from founding to first card issued, even with experienced teams. Vera was founded in 2025 targeting Q1 2026 launch — that's an aggressive but achievable timeline with the right team.
+    • <strong>FinWise contributes</strong> their balance sheet, banking license, regulatory coasgardge, and initial program support — their "cost" is the risk they take on and the capital they deploy.<br><br>
+    • <strong>Time to launch:</strong> 12–24 months from founding to first card issued, even with experienced teams. Asgard was founded in 2025 targeting Q1 2026 launch — that's an aggressive but achievable timeline with the right team.
   </div>
 </div>
 
@@ -593,54 +593,54 @@
   <h1 class="page-title">Who Regulates All of This?</h1>
   <p class="page-sub">Unlike India (RBI) or the UK (FCA), the US has NO single "central bank for fintechs." Instead, regulation is split across multiple federal agencies AND 50 state regulators. This is complex — and it's one reason the sponsor bank model exists.</p>
 
-  <div class="callout orange">🔑 <strong>The critical insight:</strong> Vera itself does NOT need a banking license. By partnering with FinWise Bank, it "borrows" FinWise's regulatory standing. FinWise is supervised by federal regulators; Vera must comply with those regulators' expectations through FinWise's oversight of the program. The bank is ultimately responsible — which is why banks do intense due diligence on fintech partners.</div>
+  <div class="callout orange">🔑 <strong>The critical insight:</strong> Asgard itself does NOT need a banking license. By partnering with FinWise Bank, it "borrows" FinWise's regulatory standing. FinWise is supervised by federal regulators; Asgard must comply with those regulators' expectations through FinWise's oversight of the program. The bank is ultimately responsible — which is why banks do intense due diligence on fintech partners.</div>
 
   <div class="reg-card">
     <div class="reg-agency">OCC — Office of the Comptroller of the Currency</div>
     <div class="reg-full">US Treasury Department / Primary federal bank regulator</div>
-    <div class="reg-body">The OCC supervises nationally chartered banks like FinWise (if federally chartered) or the equivalent state regulator does if state-chartered. The OCC conducts regular examinations of FinWise's books, risk management, and compliance programs — including its fintech partnerships. If FinWise's Vera program has problems, the OCC can order FinWise to stop. The OCC has issued guidance requiring banks to carefully monitor and control their fintech partnerships, effectively making FinWise Vera's compliance guarantor.</div>
-    <div class="reg-who"><span>Supervises: FinWise Bank directly</span><span>Indirectly governs: Vera's entire program</span></div>
+    <div class="reg-body">The OCC supervises nationally chartered banks like FinWise (if federally chartered) or the equivalent state regulator does if state-chartered. The OCC conducts regular examinations of FinWise's books, risk management, and compliance programs — including its fintech partnerships. If FinWise's Asgard program has problems, the OCC can order FinWise to stop. The OCC has issued guidance requiring banks to carefully monitor and control their fintech partnerships, effectively making FinWise Asgard's compliance guarantor.</div>
+    <div class="reg-who"><span>Supervises: FinWise Bank directly</span><span>Indirectly governs: Asgard's entire program</span></div>
   </div>
 
   <div class="reg-card">
     <div class="reg-agency">CFPB — Consumer Financial Protection Bureau</div>
     <div class="reg-full">Independent federal agency created by the Dodd-Frank Act (2010)</div>
-    <div class="reg-body">The CFPB protects consumers in financial products. For Vera's credit card, this means: Truth in Lending Act (TILA) — clear disclosure of APRs and fees; Credit CARD Act — billing rights, grace periods, over-limit rules; Fair Credit Billing Act — dispute resolution; ECOA — no discrimination in credit decisions. Vera must comply with all of these. The CFPB can directly supervise large fintechs and can examine banks' fintech programs. Their rules determine exactly how Vera's terms, statements, and disclosures must be written.</div>
-    <div class="reg-who"><span>Enforces: TILA, CARD Act, ECOA, FCRA</span><span>Governs: Vera's disclosures, billing, disputes</span></div>
+    <div class="reg-body">The CFPB protects consumers in financial products. For Asgard's credit card, this means: Truth in Lending Act (TILA) — clear disclosure of APRs and fees; Credit CARD Act — billing rights, grace periods, over-limit rules; Fair Credit Billing Act — dispute resolution; ECOA — no discrimination in credit decisions. Asgard must comply with all of these. The CFPB can directly supervise large fintechs and can examine banks' fintech programs. Their rules determine exactly how Asgard's terms, statements, and disclosures must be written.</div>
+    <div class="reg-who"><span>Enforces: TILA, CARD Act, ECOA, FCRA</span><span>Governs: Asgard's disclosures, billing, disputes</span></div>
   </div>
 
   <div class="reg-card">
     <div class="reg-agency">FDIC — Federal Deposit Insurance Corporation</div>
     <div class="reg-full">Independent federal agency</div>
-    <div class="reg-body">The FDIC insures deposits at FinWise Bank and supervises banks. For Vera, the key FDIC relevance is that it oversees FinWise's safety and soundness — including its fintech partnerships. The FDIC has recently increased scrutiny of bank-fintech relationships, requiring banks to maintain much stronger oversight of their program partners. The FDIC also enforces rules around deposit insurance disclosures — important if Vera ever offers deposit products alongside credit cards.</div>
-    <div class="reg-who"><span>Supervises: FinWise's safety and soundness</span><span>Relevance to Vera: bank oversight of fintech partner</span></div>
+    <div class="reg-body">The FDIC insures deposits at FinWise Bank and supervises banks. For Asgard, the key FDIC relevance is that it oversees FinWise's safety and soundness — including its fintech partnerships. The FDIC has recently increased scrutiny of bank-fintech relationships, requiring banks to maintain much stronger oversight of their program partners. The FDIC also enforces rules around deposit insurance disclosures — important if Asgard ever offers deposit products alongside credit cards.</div>
+    <div class="reg-who"><span>Supervises: FinWise's safety and soundness</span><span>Relevance to Asgard: bank oversight of fintech partner</span></div>
   </div>
 
   <div class="reg-card">
     <div class="reg-agency">FinCEN — Financial Crimes Enforcement Network</div>
     <div class="reg-full">US Treasury Department bureau</div>
-    <div class="reg-body">FinCEN enforces the Bank Secrecy Act (BSA) — the primary US anti-money laundering law. Every credit card program must have a BSA/AML compliance program: Customer Identification Program (CIP), Suspicious Activity Reporting (SARs), and screening against OFAC sanctions lists. Vera must screen every applicant against terrorist and sanctions databases. Socure and FinWise help with this. FinCEN receives Suspicious Activity Reports if Vera or FinWise spot potential money laundering through the card program.</div>
-    <div class="reg-who"><span>Enforces: Bank Secrecy Act, AML</span><span>Governs: Vera's KYC, transaction monitoring, SAR filing</span></div>
+    <div class="reg-body">FinCEN enforces the Bank Secrecy Act (BSA) — the primary US anti-money laundering law. Every credit card program must have a BSA/AML compliance program: Customer Identification Program (CIP), Suspicious Activity Reporting (SARs), and screening against OFAC sanctions lists. Asgard must screen every applicant against terrorist and sanctions databases. Socure and FinWise help with this. FinCEN receives Suspicious Activity Reports if Asgard or FinWise spot potential money laundering through the card program.</div>
+    <div class="reg-who"><span>Enforces: Bank Secrecy Act, AML</span><span>Governs: Asgard's KYC, transaction monitoring, SAR filing</span></div>
   </div>
 
   <div class="reg-card">
     <div class="reg-agency">Federal Reserve</div>
     <div class="reg-full">US Central Bank</div>
-    <div class="reg-body">The Fed sets interest rate policy (which affects Vera's cost of capital and what APR it needs to charge). The Fed also enforces Regulation Z (implements TILA) and Regulation B (implements ECOA — equal credit opportunity). The Fed supervises bank holding companies and sets rules around interchange fees through Regulation II (the "Durbin Amendment") — though credit cards are exempt from Durbin caps. The Fed's rate decisions directly impact Vera's economics: when rates rise, Vera's cost of funding its credit portfolio rises too.</div>
-    <div class="reg-who"><span>Sets: Interest rates (cost of capital for Vera)</span><span>Enforces: Reg Z, Reg B</span></div>
+    <div class="reg-body">The Fed sets interest rate policy (which affects Asgard's cost of capital and what APR it needs to charge). The Fed also enforces Regulation Z (implements TILA) and Regulation B (implements ECOA — equal credit opportunity). The Fed supervises bank holding companies and sets rules around interchange fees through Regulation II (the "Durbin Amendment") — though credit cards are exempt from Durbin caps. The Fed's rate decisions directly impact Asgard's economics: when rates rise, Asgard's cost of funding its credit portfolio rises too.</div>
+    <div class="reg-who"><span>Sets: Interest rates (cost of capital for Asgard)</span><span>Enforces: Reg Z, Reg B</span></div>
   </div>
 
   <div class="reg-card">
     <div class="reg-agency">FTC — Federal Trade Commission</div>
     <div class="reg-full">Independent federal agency</div>
-    <div class="reg-body">The FTC enforces rules around data privacy (Gramm-Leach-Bliley Act), unfair or deceptive practices, and consumer data security. If Vera's marketing makes misleading claims about rewards or fees, or if Vera suffers a data breach that exposes cardholder info, the FTC can take action. The FTC has been increasingly active in fintech enforcement — particularly around data brokers and consumer financial data protection.</div>
-    <div class="reg-who"><span>Enforces: GLBA, FTC Act, data privacy</span><span>Governs: Vera's marketing claims, data security</span></div>
+    <div class="reg-body">The FTC enforces rules around data privacy (Gramm-Leach-Bliley Act), unfair or deceptive practices, and consumer data security. If Asgard's marketing makes misleading claims about rewards or fees, or if Asgard suffers a data breach that exposes cardholder info, the FTC can take action. The FTC has been increasingly active in fintech enforcement — particularly around data brokers and consumer financial data protection.</div>
+    <div class="reg-who"><span>Enforces: GLBA, FTC Act, data privacy</span><span>Governs: Asgard's marketing claims, data security</span></div>
   </div>
 
   <div class="reg-card">
     <div class="reg-agency">State Regulators (50 states)</div>
     <div class="reg-full">State banking departments, attorneys general</div>
-    <div class="reg-body">Here's where the US gets complicated: each of the 50 states has its own financial regulator. Vera technically operates in all 50 states (since cards are used nationwide). The sponsor bank structure (FinWise) generally means Vera can export FinWise's home state (Utah) charter protections — so Vera doesn't need 50 state licenses. But state AGs can still take action for deceptive practices, and some states (like California, New York) have stricter consumer protection laws that apply regardless. Vera needs expert legal counsel just to navigate state law.</div>
+    <div class="reg-body">Here's where the US gets complicated: each of the 50 states has its own financial regulator. Asgard technically operates in all 50 states (since cards are used nationwide). The sponsor bank structure (FinWise) generally means Asgard can export FinWise's home state (Utah) charter protections — so Asgard doesn't need 50 state licenses. But state AGs can still take action for deceptive practices, and some states (like California, New York) have stricter consumer protection laws that apply regardless. Asgard needs expert legal counsel just to navigate state law.</div>
     <div class="reg-who"><span>Potential issues: State consumer protection laws</span><span>Generally managed through: FinWise's federal charter</span></div>
   </div>
 
@@ -652,7 +652,7 @@
 <!-- TAB 5: JOURNEY -->
 <div class="tab-panel" id="tab-journey">
   <h1 class="page-title">What Actually Happens in a Transaction?</h1>
-  <p class="page-sub">You tap your Vera card at a coffee shop for $5. Here's what happens in the next 1–2 seconds — and involves almost every partner in the ecosystem.</p>
+  <p class="page-sub">You tap your Asgard card at a coffee shop for $5. Here's what happens in the next 1–2 seconds — and involves almost every partner in the ecosystem.</p>
 
   <div class="callout blue">⚡ <strong>Total time:</strong> The entire sequence below — from tap to approval — takes about 1–2 seconds. Most of it happens in under 500 milliseconds.</div>
 
@@ -660,7 +660,7 @@
     <div class="flow-step">
       <div class="flow-num">1</div>
       <div class="flow-content">
-        <div class="flow-title">You tap your Vera card at the merchant terminal</div>
+        <div class="flow-title">You tap your Asgard card at the merchant terminal</div>
         <div class="flow-desc">The NFC chip or magnetic stripe transmits your card number, expiry, and a unique cryptographic code to the merchant's point-of-sale terminal. This unique code (generated by Zeta) prevents the transaction being copied and replayed by fraudsters.</div>
       </div>
     </div>
@@ -675,7 +675,7 @@
       <div class="flow-num">3</div>
       <div class="flow-content">
         <div class="flow-title">Featurespace scores the transaction for fraud risk</div>
-        <div class="flow-desc">Before approving, Vera/FinWise routes the transaction through Featurespace's ARIC engine. It checks: Is this consistent with your spending patterns? Is the merchant in a known fraud category? Is the location suspicious? This happens in ~50 milliseconds. If fraud risk is too high, it's declined before approval.</div>
+        <div class="flow-desc">Before approving, Asgard/FinWise routes the transaction through Featurespace's ARIC engine. It checks: Is this consistent with your spending patterns? Is the merchant in a known fraud category? Is the location suspicious? This happens in ~50 milliseconds. If fraud risk is too high, it's declined before approval.</div>
       </div>
     </div>
     <div class="flow-step">
@@ -688,22 +688,22 @@
     <div class="flow-step">
       <div class="flow-num">5</div>
       <div class="flow-content">
-        <div class="flow-title">The transaction appears in your Vera app in real time</div>
-        <div class="flow-desc">Zeta sends a webhook notification to Vera's app, which displays the $5 transaction instantly — merchant name, category, and remaining credit. Any rewards (e.g., cashback) are calculated and displayed. Vera also updates your available credit limit in real time.</div>
+        <div class="flow-title">The transaction appears in your Asgard app in real time</div>
+        <div class="flow-desc">Zeta sends a webhook notification to Asgard's app, which displays the $5 transaction instantly — merchant name, category, and remaining credit. Any rewards (e.g., cashback) are calculated and displayed. Asgard also updates your available credit limit in real time.</div>
       </div>
     </div>
     <div class="flow-step">
       <div class="flow-num">6</div>
       <div class="flow-content">
         <div class="flow-title">Settlement happens the next morning (the "real" money movement)</div>
-        <div class="flow-desc">The approval was just a "promise to pay." The actual money movement happens the next business day. Mastercard instructs FinWise to send $4.875 to the coffee shop's bank (keeping $0.125 in network fees and interchange). FinWise debits Vera's credit facility account. TabaPay may be involved in actually moving these funds via ACH or real-time payment rails.</div>
+        <div class="flow-desc">The approval was just a "promise to pay." The actual money movement happens the next business day. Mastercard instructs FinWise to send $4.875 to the coffee shop's bank (keeping $0.125 in network fees and interchange). FinWise debits Asgard's credit facility account. TabaPay may be involved in actually moving these funds via ACH or real-time payment rails.</div>
       </div>
     </div>
     <div class="flow-step">
       <div class="flow-num">7</div>
       <div class="flow-content">
         <div class="flow-title">At month end: billing, statements, and repayment</div>
-        <div class="flow-desc">Zeta generates your monthly statement, calculates your minimum payment due, and sends you reminders (via Firstsource's system if you're delinquent). When you pay your bill online, TabaPay processes the ACH payment from your bank account back to Vera/FinWise. The credit cycle begins again.</div>
+        <div class="flow-desc">Zeta generates your monthly statement, calculates your minimum payment due, and sends you reminders (via Firstsource's system if you're delinquent). When you pay your bill online, TabaPay processes the ACH payment from your bank account back to Asgard/FinWise. The credit cycle begins again.</div>
       </div>
     </div>
   </div>
@@ -712,7 +712,7 @@
     💡 <strong>Who makes money on your $5 coffee?</strong><br><br>
     The coffee shop receives ~$4.85. About $0.15 in fees were charged:<br>
     • Mastercard gets ~$0.007 (network assessment)<br>
-    • FinWise/Vera get ~$0.13 (interchange, split between them)<br>
+    • FinWise/Asgard get ~$0.13 (interchange, split between them)<br>
     • The acquiring bank (coffee shop's bank) gets ~$0.013<br><br>
     On individual transactions, the amounts are tiny. But multiply by millions of transactions — and add interest on revolving balances — and you have a multi-billion dollar industry.
   </div>
@@ -728,35 +728,35 @@ function showTab(t) {
 }
 
 const details = {
-  finwise: { icon:'🏦', name:'FinWise Bank', tagline:'The BIN Sponsor — the legal backbone of Vera\'s card program', body:'In the US, only a federally or state-chartered bank can issue credit cards. Vera is NOT a bank, so it needed FinWise to be the legal issuer. FinWise provides its BIN (Bank Identification Number — the first 6 digits on the card), its Mastercard membership, its banking license, and critically, its regulatory compliance infrastructure. FinWise holds some credit risk on its balance sheet and is ultimately responsible to regulators for the program\'s compliance. The bank-fintech partnership agreement specifies exactly who does what, who bears what risk, and how economics are shared.', analogy:'🏛️ Analogy: FinWise is the building\'s foundation and the official owner of the address. Vera is the tenant who designs, furnishes, and runs the business inside — but the building must meet code, and FinWise is legally responsible for that.', vera:'Vera\'s partner. FinWise announced the BIN sponsorship agreement in April 2026. CEO Sandeep Sachdeva has deep Capital One experience, which likely helped negotiate this relationship.', examples:['Cross River Bank','Sutton Bank','Blue Ridge Bank','Pathward (MetaBank)','WebBank'] },
-  mastercard: { icon:'💳', name:'Mastercard', tagline:'The global payment highway — accepted at 150M+ merchant locations worldwide', body:'Mastercard is one of the two dominant global card networks (with Visa). Their role is to: (1) route transactions between the merchant\'s bank and FinWise, (2) set the rules all participants must follow (fraud liability, disputes, card specifications), (3) provide brand recognition and merchant acceptance, (4) collect assessment fees on every transaction. Mastercard has also invested in Zeta and has a 5-year partnership with them — meaning Vera\'s processing engine and payment network are deeply integrated and strategically aligned.', analogy:'🛣️ Analogy: Mastercard is the interstate highway system. Anyone who pays the toll (interchange) can use it, and merchants display the Mastercard logo to say "our road connects here."', vera:'Vera\'s card runs on the Mastercard network. Mastercard\'s investment in Zeta means Vera benefits from deep integration between its processor and network.', examples:['Visa (main alternative)','American Express','Discover'] },
-  tabapay: { icon:'⚡', name:'TabaPay', tagline:'The money movement plumber — connects to 14+ networks for instant payments', body:'TabaPay is a role that\'s often invisible but critically important. While Zeta handles the card authorization, and Mastercard handles the settlement between banks, someone needs to handle the actual movement of money in and out of Vera\'s accounts — especially for bill payments. When a cardholder pays their Vera bill from their bank account, TabaPay can process that payment via ACH, debit card, real-time payments (RTP), or other rails. TabaPay connects to 14+ payment networks and 18 partner banks, offering instant payment capabilities and least-cost routing. It\'s trusted by 2,500+ fintechs and processes 1M+ transactions daily. For credit cards specifically, TabaPay is relevant for: receiving bill payments, issuing refunds/disbursements, and moving funds between accounts instantly.', analogy:'🔧 Analogy: TabaPay is the network of pipes in your building. Mastercard is the water utility. TabaPay decides which pipe to use to move water most efficiently and cheaply.', vera:'Not confirmed as a Vera partner, but would fit naturally in the stack for payment bill collection and money movement.', examples:['Dwolla','Moov','Stripe Treasury','Modern Treasury'] },
-  socure: { icon:'🪪', name:'Socure', tagline:'AI identity verification — knows in seconds if you are who you say you are', body:'When you apply for a Vera card, Socure\'s platform checks your identity against 400+ data sources in seconds. It uses machine learning to verify your name, date of birth, Social Security Number, and address — and importantly, it also evaluates your risk of being a synthetic identity (a fake person created by combining real and fake data). Socure serves 4 of the top 5 US banks and 7 of the top 10 credit card issuers. Their KYC system auto-approves up to 98% of real customers while blocking fraudsters — this balance is crucial. Too strict and you reject real customers; too loose and fraudsters get through.', analogy:'🕵️ Analogy: Socure is the digital equivalent of a government database check — but running in the background in 2 seconds instead of days.', vera:'Vera\'s partner for KYC/identity verification during the application process.', examples:['Alloy','Persona','Jumio','Onfido','LexisNexis Risk Solutions'] },
-  transunion: { icon:'📊', name:'TransUnion', tagline:'One of the Big Three credit bureaus — the source of your credit score', body:'TransUnion is one of three major US credit bureaus (with Experian and Equifax). They track the borrowing and repayment history of almost every American adult — mortgages, car loans, credit cards, student loans. They generate credit scores (including VantageScore and FICO variants) that predict the probability of someone defaulting. Vera pulls a TransUnion report on every applicant to decide: approve or decline? What credit limit? What interest rate? People with higher scores get better terms. TransUnion also provides ongoing monitoring — alerting Vera if a customer\'s credit profile changes significantly post-approval (e.g., they took on a lot of new debt elsewhere).', analogy:'📋 Analogy: TransUnion is like the reference check you do before hiring someone — except for borrowing money, and they have 20+ years of history on most people.', vera:'Vera\'s credit bureau partner for underwriting decisions.', examples:['Experian','Equifax','Nova Credit (for immigrants without US history)'] },
-  finicity: { icon:'🔗', name:'Finicity (Mastercard Open Banking)', tagline:'Lets applicants share their real bank data to prove creditworthiness', body:'Finicity, now owned by Mastercard, is an "open banking" platform. With a user\'s permission, it securely connects to their bank account and pulls transaction data — income, spending patterns, rent payments, utilities. This is valuable for people with thin credit files (recent immigrants, young adults, people who paid cash historically). Instead of rejecting them based on a limited credit score, Vera can see: "this person earns $5,000/month, pays rent on time, and has $8,000 in savings." Finicity provides the data and analytics to make this work compliantly under FCRA (Fair Credit Reporting Act) requirements.', analogy:'🔍 Analogy: If your credit score is your grade point average, Finicity shows your actual homework and test papers — a much richer picture of how you\'re really doing.', vera:'Vera\'s open banking data partner for enhanced credit decisioning.', examples:['Plaid','MX','Yodlee','Akoya'] },
-  digifi: { icon:'⚙️', name:'DigiFi', tagline:'The application processing engine — automates everything from form fill to decision', body:'DigiFi is a Loan Origination System (LOS) — software that manages the entire credit application workflow. When you apply for a Vera card, DigiFi: (1) collects your application data, (2) calls Socure to verify your identity, (3) calls TransUnion for your credit report, (4) calls Finicity for bank data, (5) runs Vera\'s underwriting rules (approve/decline/what limit), (6) sends the decision back — all automatically, in seconds. Without DigiFi, Vera would need engineers to build this complex orchestration from scratch. DigiFi is open-source at its core and has an "integration marketplace" of pre-built connectors to bureaus and data providers.', analogy:'🏭 Analogy: DigiFi is the factory assembly line. It coordinates all the robots (Socure, TransUnion, Finicity) in the right sequence to produce a credit decision automatically.', vera:'Vera\'s loan origination system for processing applications.', examples:['Blend','Plaid (for LOS)','nCino','Finastra'] },
-  zeta: { icon:'🖥️', name:'Zeta Tachyon', tagline:'The modern core card processing platform — the operating system of the credit card', body:'Zeta\'s Tachyon is the most comprehensive partner in the stack. It handles: authorization (approving/declining each swipe), account management (balance tracking, credit limit), billing (statement generation, minimum payment calculation), interest computation, rewards engine, cardholder servicing, card issuance, and the APIs that power Vera\'s mobile app. Unlike legacy processors (Fiserv, TSYS) that run on decades-old mainframe technology, Zeta is cloud-native, API-first, and built for fintechs. Mastercard has invested in Zeta and they have a 5-year global partnership — over 25 million accounts run on Tachyon globally.', analogy:'🚗 Analogy: If Mastercard is the road and FinWise is the license plate, Zeta is the entire car — engine, transmission, dashboard, GPS, and infotainment system combined.', vera:'Vera\'s core card processing platform. The foundation of Vera\'s entire card operation.', examples:['Fiserv','FIS (Worldpay)','TSYS (Global Payments)','Marqeta','i2c'] },
-  fiserv: { icon:'🏛️', name:'Fiserv / FIS / TSYS', tagline:'Legacy card processors — used by traditional banks, often on 1970s mainframe technology', body:'These are the incumbent card processors used by most traditional banks. Fiserv (which acquired First Data), FIS (which acquired SunGard), and TSYS (acquired by Global Payments) process the vast majority of US credit card transactions. They work — but they\'re built on COBOL mainframe technology from the 1970s-1980s. Adding new features takes months or years. API access is limited. This is exactly why fintechs like Vera prefer modern processors like Zeta or Marqeta. However, these legacy processors have crucial advantages: massive scale, regulatory relationships built over decades, and the trust of every major bank.', analogy:'🚂 Analogy: These are the freight trains — enormous capacity, incredibly reliable, running on 100-year-old tracks. Zeta is the high-speed rail — faster, more modern, but smaller scale.', vera:'Not used by Vera — they chose Zeta\'s modern stack.', examples:['Fiserv (First Data)','FIS','TSYS','Galileo','i2c'] },
-  marqeta: { icon:'🔄', name:'Marqeta', tagline:'Modern card issuing API platform — popular with fintechs and gig economy companies', body:'Marqeta is an alternative to Zeta for modern card issuance. They\'re famous for powering DoorDash, Instacart, Square, and many neobanks. Marqeta specializes in card issuing APIs and real-time transaction controls (you can set very granular rules — e.g., this DoorDash driver\'s card can only be used at specific restaurants). For traditional credit cards, Zeta is more comprehensive. Marqeta is often chosen for prepaid, debit, and commercial card programs where transaction control logic is complex.', analogy:'🎮 Analogy: Marqeta gives you the most programmable, granular control over every transaction rule — think of it as putting a script engine on every card swipe.', vera:'Not Vera\'s choice — they went with Zeta.', examples:['Used by: Cash App, DoorDash, Uber, Klarna (for BNPL)'] },
-  featurespace: { icon:'🛡️', name:'Featurespace', tagline:'AI fraud detection — learns your spending DNA and blocks anomalies in real time', body:'Featurespace\'s ARIC Risk Hub is an AI platform for detecting fraud in real time. It uses "Adaptive Behavioral Analytics" — meaning it continuously learns each individual cardholder\'s unique spending patterns. It doesn\'t just look for "known bad" patterns; it detects DEVIATIONS from YOUR normal. So if you always shop in Mumbai and suddenly there\'s a transaction in Frankfurt, ARIC flags it regardless of whether Frankfurt is a "known fraud location." Their platform covers: card fraud, application fraud (fake identities), account takeover (stolen credentials), and money laundering patterns. Visa (not Mastercard) has also partnered with Featurespace for a broader AI fraud platform.', analogy:'🧬 Analogy: Featurespace knows your spending DNA. Any transaction that doesn\'t match your DNA triggers an alarm — even if that transaction pattern has never been seen before.', vera:'Vera\'s AI fraud detection engine.', examples:['Sardine','Kount (Equifax)','Sift','Stripe Radar','ThreatMetrix (LexisNexis)'] },
-  metro: { icon:'🏭', name:'Metrocompanies', tagline:'Card manufacturer and fulfillment — the physical card in your wallet', body:'The Metropolitan Companies is a card manufacturing and direct mail fulfillment company. When Vera approves your application, Metrocompanies receives a digital instruction with your personal card details, prints your physical PVC card (with chip, NFC antenna, magnetic stripe, your name, and card number embossed), packages it with a welcome letter and activation instructions, and mails it to your address within 3-5 business days. Physical cards must meet Mastercard\'s strict specifications (EMV chip standards, NFC standards, physical dimensions, security features). A basic chip card costs $0.90-$1.40 to make; premium metal cards cost $15-25+.', analogy:'🖨️ Analogy: Metrocompanies is the specialized printing press that makes the exact format of card Mastercard requires — secure, chip-enabled, and personalized to you.', vera:'Vera\'s card manufacturing and mailing partner.', examples:['IDEMIA','CPI Card Group','Giesecke+Devrient (G+D)','Fiserv Output Solutions'] },
-  awsconnect: { icon:'☎️', name:'AWS Connect', tagline:'Cloud contact center — the phone system behind Vera\'s customer support', body:'Amazon Connect is a cloud-based contact center platform. It replaces the need for Vera to build physical call center infrastructure. When you call Vera\'s customer service line, AWS Connect: routes your call intelligently (IVR menus, intent detection), pulls up your account information from Zeta\'s systems, records the call for quality/compliance, provides AI-powered voice bots for simple queries ("What\'s my balance?"), and connects you to a live agent (from Firstsource). AWS Connect charges per-minute of usage — no upfront infrastructure cost. This pay-as-you-go model is perfect for a startup where call volume is uncertain early on.', analogy:'📞 Analogy: AWS Connect is like renting a fully automated, scalable call center that you only pay for when someone actually calls.', vera:'Vera\'s cloud contact center infrastructure.', examples:['Genesys','NICE inContact','Twilio Flex','Five9'] },
-  firstsource: { icon:'👥', name:'Firstsource', tagline:'BPO — the outsourced human team for customer service and debt collections', body:'Firstsource is a Business Process Outsourcing (BPO) company with decades of experience in financial services. They provide Vera with an outsourced operations team — real agents who handle: complex customer service issues, disputes and chargebacks, fraud claims, account closure requests. Critically, they also handle collections — when cardholders miss payments, Firstsource\'s team reaches out with payment reminders, hardship programs, and repayment plans in a legally compliant, empathetic way. They have specific expertise in credit card collections from working with banks like Barclaycard. Collections is a specialized skill — you need to be firm about recovering money while not violating FDCPA (debt collection rules) and preserving the customer relationship where possible.', analogy:'👔 Analogy: Firstsource is like the outsourced HR + customer relations + accounts receivable department — so Vera\'s 15-person tech team doesn\'t need to become a 500-person call center.', vera:'Vera\'s customer service and collections BPO partner.', examples:['Conduent','Concentrix','WNS','Sutherland','EXL Service'] },
-  alloy: { icon:'🔐', name:'Alloy / Persona', tagline:'KYC orchestration platforms — alternative to Socure', body:'Alloy and Persona are platforms that orchestrate multiple identity verification data sources into a single decision. Instead of building direct integrations to 10 different data providers, a fintech integrates with Alloy or Persona once, and those platforms manage the underlying data sources. They\'re popular with newer fintechs that want flexibility to change underlying vendors without re-engineering their integration. Persona is known for its excellent user-facing identity document verification flow (the UI where you take a selfie and photo of your ID).', analogy:'🎛️ Analogy: If Socure is a complete identity verification solution, Alloy is the control panel that lets you mix and match different identity data sources.', vera:'Not Vera\'s choice — they use Socure directly.', examples:['Persona','Jumio','Onfido','Sardine'] },
-  experian: { icon:'📈', name:'Experian / Equifax', tagline:'The other two major credit bureaus alongside TransUnion', body:'The US has three major credit bureaus: TransUnion (Vera\'s partner), Experian, and Equifax. Mature credit programs often pull from 2-3 bureaus for a more complete picture. Each bureau has slightly different data — a lender that reports to Experian but not TransUnion means your Experian score will differ. Experian also owns the "Boost" product (powered by Finicity) which lets consumers add utility and phone payments to their credit history. Many card programs pull from all three during underwriting to get the most complete risk assessment.', analogy:'📚 Analogy: Like checking someone\'s references at three different previous employers rather than just one.', vera:'TransUnion is Vera\'s bureau. Larger programs use all three.', examples:['Experian','Equifax','FICO (provides scoring models)','VantageScore'] },
-  plaid: { icon:'🔌', name:'Plaid', tagline:'Alternative open banking connector to Finicity', body:'Plaid is Finicity\'s main competitor for open banking / bank account connectivity. Plaid connects to 12,000+ US financial institutions and allows users to link their bank accounts to fintech apps. It\'s used by Venmo, Betterment, Acorns, and hundreds of fintechs. For credit decisions, Plaid provides income verification, cash flow data, and asset verification. The choice between Plaid and Finicity often comes down to pricing, coverage of specific banks, and the specific data attributes needed.', analogy:'🔌 Analogy: Plaid and Finicity are like two electricians who can wire your house to the power grid — same job, slightly different approaches and pricing.', vera:'Not Vera\'s choice — they use Finicity (Mastercard Open Banking).', examples:['MX','Yodlee (Envestnet)','Akoya','Finicity'] },
-  comply: { icon:'🔎', name:'ComplyAdvantage', tagline:'AML/sanctions screening — checking every customer against terrorist watchlists', body:'ComplyAdvantage provides AML (Anti-Money Laundering) screening data and technology. Every credit card applicant must be checked against: OFAC sanctions lists (terrorists, narcotics traffickers), PEP lists (Politically Exposed Persons — government officials who may have higher corruption risk), adverse media databases, and global watchlists. ComplyAdvantage uses AI to do this screening in real time and provides ongoing monitoring — alerting Vera if a cardholder later appears on a sanctions list. This is legally required under the Bank Secrecy Act.', analogy:'🚨 Analogy: ComplyAdvantage is like the no-fly list check at the airport — but for financial services, checking every customer against global watchlists.', vera:'Not listed as a Vera partner, but this function is required — likely handled by Socure or FinWise.', examples:['World-Check (LSEG)','Accuity (now Bankers Almanac)','Dow Jones Risk & Compliance','LexisNexis WorldCompliance'] },
-  fincen: { icon:'⚖️', name:'FinCEN', tagline:'Financial Crimes Enforcement Network — the AML regulator', body:'FinCEN is a bureau of the US Treasury that administers the Bank Secrecy Act. It\'s not a vendor — it\'s a government regulator. FinCEN requires all financial institutions (including FinWise, on behalf of Vera) to: maintain an AML compliance program, file Suspicious Activity Reports (SARs) when transactions look like money laundering, file Currency Transaction Reports (CTRs) for large cash transactions, and maintain Customer Identification Program (CIP) records. FinCEN maintains the network for receiving and analyzing these reports to detect financial crimes.', analogy:'🏛️ Analogy: FinCEN is the financial equivalent of the FBI — collecting intelligence on suspicious financial activity to fight money laundering and terrorism financing.', vera:'FinCEN governs Vera\'s AML obligations through FinWise.', examples:['OFAC (Treasury — sanctions)','FinCEN itself is the regulator'] },
-  cfpb: { icon:'🛡️', name:'CFPB', tagline:'Consumer Financial Protection Bureau — protects cardholders from unfair practices', body:'The CFPB was created in 2010 after the financial crisis specifically to protect consumers in financial products. For Vera, the CFPB enforces: Truth in Lending Act (TILA) — requires clear APR and fee disclosures; the Credit CARD Act — billing rights, grace periods, penalty fee limits; Equal Credit Opportunity Act — you can\'t discriminate in credit decisions based on race, gender, religion, national origin; Fair Credit Billing Act — dispute rights when you see errors on your statement. The CFPB has the power to examine Vera\'s practices and fine them for violations. They\'re also increasingly active on AI-based credit decisions, requiring explainability of why an application was denied.', analogy:'⚖️ Analogy: The CFPB is the referee in the credit card game — making sure the rules are fair and companies aren\'t exploiting customers.', vera:'The CFPB\'s rules directly govern Vera\'s terms, disclosures, billing, and dispute process.', examples:['Works alongside OCC, FDIC, FTC, state AGs'] },
-  occ: { icon:'🏛️', name:'OCC / Federal Reserve', tagline:'Bank regulators — supervise FinWise, which indirectly governs Vera', body:'The Office of the Comptroller of the Currency (OCC) supervises nationally chartered banks. The Federal Reserve supervises bank holding companies and enforces key regulations. Neither directly supervises Vera — but they supervise FinWise Bank, which is Vera\'s sponsor. Because FinWise is legally responsible for the card program, everything Vera does must meet FinWise\'s regulators\' standards. The OCC and FDIC have both issued guidance making banks more responsible for their fintech partners — including requiring banks to have right to audit their fintech partners, maintain detailed oversight programs, and be able to wind down fintech relationships without harming consumers.', analogy:'👮 Analogy: The OCC is the safety inspector who visits the building\'s foundation (FinWise). If the foundation fails inspection, the whole building (including Vera) comes down.', vera:'OCC supervises FinWise, which in turn oversees Vera\'s compliance.', examples:['OCC','Federal Reserve','FDIC','State banking departments'] },
-  visa: { icon:'💳', name:'Visa', tagline:'The alternative to Mastercard — the world\'s largest card network by transaction volume', body:'Visa is Mastercard\'s main global competitor. Visa processes more transactions globally than Mastercard. The choice between Visa and Mastercard for a new card program depends on: (1) which network the processor (Zeta, in Vera\'s case) has the best relationship with — Mastercard has invested in Zeta, making it a natural choice; (2) negotiated economics — which network offers better rates for a startup; (3) feature access — Mastercard\'s "Send" platform and Mastercard Open Banking (Finicity) integrate tightly. Most consumers don\'t care which network their card uses — both are accepted almost everywhere.', analogy:'🏎️ Analogy: Visa and Mastercard are like Toyota and Honda — both excellent, both everywhere, and most people choose based on specific model/deal rather than brand alone.', vera:'Vera chose Mastercard, likely due to Mastercard\'s investment in Zeta.', examples:['American Express (also issuer + network)','Discover (also issuer + network)'] },
-  sardine: { icon:'🐟', name:'Sardine', tagline:'AI fraud, compliance & credit risk platform — covers fraud AND compliance in one', body:'Sardine is a newer, AI-first platform that covers fraud detection, device intelligence, AML compliance, and even credit underwriting signals — all in one platform. It\'s a potential alternative to Featurespace for fraud detection and to some compliance tools. Sardine raised $70M in 2025 led by Activant Capital, with Andreessen Horowitz, Google Ventures, and Experian Ventures participating. It\'s particularly strong in detecting device-level risk signals (the specific phone/computer used) which is important for digital-first card applications where there\'s no in-person verification.', analogy:'🔭 Analogy: Sardine is like a Swiss Army knife for fraud and compliance — one tool that covers multiple jobs that previously required multiple vendors.', vera:'Not confirmed as Vera\'s partner but a strong alternative to Featurespace.', examples:['Featurespace (Vera\'s choice)','Kount','Sift','ThreatMetrix'] },
-  kount: { icon:'🎯', name:'Kount / Sift', tagline:'Transaction risk scoring — real-time machine learning risk scores', body:'Kount (owned by Equifax) and Sift are real-time fraud risk scoring platforms. For every transaction, they generate a risk score from 0-100 based on hundreds of signals. Card issuers use these scores alongside Featurespace-style behavioral analytics to make faster, more accurate fraud decisions. Sift is particularly popular in e-commerce and digital goods fraud prevention. Kount\'s integration with Equifax provides access to rich identity and credit bureau data to contextualize risk.', analogy:'🌡️ Analogy: Kount is the fraud thermometer — it gives you a precise temperature reading of how risky any given transaction is.', vera:'Not listed as a Vera partner.', examples:['Featurespace (Vera\'s choice)','Sardine','Stripe Radar','Riskified'] },
-  credit_facility: { icon:'💰', name:'Credit Facility / Venture Debt', tagline:'The capital that funds the actual loans — this is what Vera lends to cardholders', body:'This is the most capital-intensive and often least understood aspect of credit card companies. Every dollar a cardholder charges to their Vera card is a dollar Vera (and FinWise) must have available to pay the merchant. With even 10,000 customers averaging $2,000 in balances, Vera needs $20M of capital just to fund those balances. This capital comes from: (1) venture debt / credit facility from specialized lenders (Victory Park Capital, Atalaya, Waterfall Asset Management are examples), (2) FinWise\'s own balance sheet contribution, (3) eventually, securitization — selling bundles of credit card receivables to institutional investors. Brex needed $57M+ in venture funding partly because of this capital need. Cardless raised $170M total. The capital cost is why credit card programs are expensive to scale.', analogy:'🏦 Analogy: Running a credit card program requires the same basic activity as banking — you need to have money available to lend before you can earn interest on it. Vera must raise this capital separately from its operating budget.', vera:'Vera likely has a credit facility from FinWise (who holds balances on their balance sheet) plus may need external debt capital as they scale.', examples:['Victory Park Capital','Atalaya Capital','Waterfall Asset Management','Benefit Street Partners'] },
-  securitization: { icon:'📦', name:'ABS / Securitization', tagline:'Selling bundled credit card receivables to free up capital — used by mature programs', body:'As a credit card program matures, it typically moves from keeping all balances on its own balance sheet to securitization. This means bundling thousands of credit card balances into a financial product (an Asset-Backed Security, or ABS) and selling it to institutional investors like pension funds and insurance companies. The investors get monthly interest payments (from cardholders\' APR payments); Vera gets cash back that it can use to fund more new cardholders. Capital One, Discover, and all major card issuers do this constantly. It\'s what enables credit card programs to scale to millions of customers without infinite equity capital. Vera is too early for this — but it\'s the endgame of their capital strategy.', analogy:'🏠 Analogy: Securitization is like a mortgage-backed security — instead of mortgages, you bundle credit card debts. Investors buy them for steady yield; the issuer gets cash to make more loans.', vera:'Not yet applicable to Vera — this is a later-stage capital structure.', examples:['Capital One\'s securitization trust','Discover ABS programs'] },
-  idemia: { icon:'🖨️', name:'IDEMIA / CPI Card Group', tagline:'Alternative card manufacturers — especially for premium/metal cards', body:'IDEMIA is the world\'s largest smart card manufacturer (they also make passports and national ID cards). CPI Card Group is a major US-based card manufacturer. For premium products like metal credit cards (think Apple Card\'s titanium card), manufacturers like CPI are required — the manufacturing process for metal cards is completely different from PVC. Card manufacturing is a highly specialized, security-sensitive industry. Manufacturers must be certified by Mastercard and Visa to produce cards that meet network specifications for chip placement, contactless antenna, and physical security features.', analogy:'🏭 Analogy: Card manufacturers are like certified government contractors — they must meet strict specs, pass security audits, and produce millions of identical, secure items.', vera:'Metrocompanies is Vera\'s choice for card manufacturing.', examples:['IDEMIA','CPI Card Group','Giesecke+Devrient','HID Global'] },
-  jumio: { icon:'📷', name:'Jumio', tagline:'Document & biometric verification — photo ID + selfie matching for high-assurance KYC', body:'Jumio specializes in document verification (scanning driver\'s licenses, passports) and biometric matching (taking a selfie and comparing to the ID photo). This is called "liveness detection" — confirming the applicant is a real, live person and matches their ID document. While Socure can verify identity through data alone, Jumio (and competitors like Onfido) add a visual verification layer. This is particularly important for higher-risk applicants or when regulatory requirements mandate enhanced due diligence. The combination of data-based KYC (Socure) and document/biometric verification (Jumio) provides the strongest identity assurance.', analogy:'📸 Analogy: Socure checks your records. Jumio checks your face. Together they\'re the two-factor authentication of identity verification.', vera:'Not listed as a Vera partner — Socure handles KYC for them.', examples:['Onfido','ID.me','Persona','Veriff'] },
-  marqeta_dec: { icon:'🔄', name:'Marqeta / Blend (for LOS)', tagline:'Alternative origination and issuing platforms', body:'Marqeta offers not just card issuing but also decision-making tools for modern credit programs. Blend is a cloud-based platform originally built for mortgage applications but expanded into consumer credit and card programs. Some fintechs choose Marqeta\'s end-to-end platform (origination + issuing) rather than using separate vendors like DigiFi + Zeta. The tradeoff is flexibility vs. simplicity. Vera chose the best-of-breed approach (DigiFi for origination, Zeta for processing) rather than an integrated single-vendor platform.', analogy:'🏪 Analogy: Blend and Marqeta are like department stores — one-stop shops. DigiFi + Zeta are like buying the best specialist products from separate shops.', vera:'Not Vera\'s choice — they use DigiFi + Zeta as separate best-of-breed vendors.', examples:['Blend','Temenos','nCino','Finflux'] }
+  finwise: { icon:'🏦', name:'FinWise Bank', tagline:'The BIN Sponsor — the legal backbone of Asgard\'s card program', body:'In the US, only a federally or state-chartered bank can issue credit cards. Asgard is NOT a bank, so it needed FinWise to be the legal issuer. FinWise provides its BIN (Bank Identification Number — the first 6 digits on the card), its Mastercard membership, its banking license, and critically, its regulatory compliance infrastructure. FinWise holds some credit risk on its balance sheet and is ultimately responsible to regulators for the program\'s compliance. The bank-fintech partnership agreement specifies exactly who does what, who bears what risk, and how economics are shared.', analogy:'🏛️ Analogy: FinWise is the building\'s foundation and the official owner of the address. Asgard is the tenant who designs, furnishes, and runs the business inside — but the building must meet code, and FinWise is legally responsible for that.', asgard:'Asgard\'s partner. FinWise announced the BIN sponsorship agreement in April 2026. CEO Amitkumar Sachdeva has deep Capital One experience, which likely helped negotiate this relationship.', examples:['Cross River Bank','Sutton Bank','Blue Ridge Bank','Pathward (MetaBank)','WebBank'] },
+  mastercard: { icon:'💳', name:'Mastercard', tagline:'The global payment highway — accepted at 150M+ merchant locations worldwide', body:'Mastercard is one of the two dominant global card networks (with Visa). Their role is to: (1) route transactions between the merchant\'s bank and FinWise, (2) set the rules all participants must follow (fraud liability, disputes, card specifications), (3) provide brand recognition and merchant acceptance, (4) collect assessment fees on every transaction. Mastercard has also invested in Zeta and has a 5-year partnership with them — meaning Asgard\'s processing engine and payment network are deeply integrated and strategically aligned.', analogy:'🛣️ Analogy: Mastercard is the interstate highway system. Anyone who pays the toll (interchange) can use it, and merchants display the Mastercard logo to say "our road connects here."', asgard:'Asgard\'s card runs on the Mastercard network. Mastercard\'s investment in Zeta means Asgard benefits from deep integration between its processor and network.', examples:['Visa (main alternative)','American Express','Discover'] },
+  tabapay: { icon:'⚡', name:'TabaPay', tagline:'The money movement plumber — connects to 14+ networks for instant payments', body:'TabaPay is a role that\'s often invisible but critically important. While Zeta handles the card authorization, and Mastercard handles the settlement between banks, someone needs to handle the actual movement of money in and out of Asgard\'s accounts — especially for bill payments. When a cardholder pays their Asgard bill from their bank account, TabaPay can process that payment via ACH, debit card, real-time payments (RTP), or other rails. TabaPay connects to 14+ payment networks and 18 partner banks, offering instant payment capabilities and least-cost routing. It\'s trusted by 2,500+ fintechs and processes 1M+ transactions daily. For credit cards specifically, TabaPay is relevant for: receiving bill payments, issuing refunds/disbursements, and moving funds between accounts instantly.', analogy:'🔧 Analogy: TabaPay is the network of pipes in your building. Mastercard is the water utility. TabaPay decides which pipe to use to move water most efficiently and cheaply.', asgard:'Not confirmed as a Asgard partner, but would fit naturally in the stack for payment bill collection and money movement.', examples:['Dwolla','Moov','Stripe Treasury','Modern Treasury'] },
+  socure: { icon:'🪪', name:'Socure', tagline:'AI identity verification — knows in seconds if you are who you say you are', body:'When you apply for a Asgard card, Socure\'s platform checks your identity against 400+ data sources in seconds. It uses machine learning to verify your name, date of birth, Social Security Number, and address — and importantly, it also evaluates your risk of being a synthetic identity (a fake person created by combining real and fake data). Socure serves 4 of the top 5 US banks and 7 of the top 10 credit card issuers. Their KYC system auto-approves up to 98% of real customers while blocking fraudsters — this balance is crucial. Too strict and you reject real customers; too loose and fraudsters get through.', analogy:'🕵️ Analogy: Socure is the digital equivalent of a government database check — but running in the background in 2 seconds instead of days.', asgard:'Asgard\'s partner for KYC/identity verification during the application process.', examples:['Alloy','Persona','Jumio','Onfido','LexisNexis Risk Solutions'] },
+  transunion: { icon:'📊', name:'TransUnion', tagline:'One of the Big Three credit bureaus — the source of your credit score', body:'TransUnion is one of three major US credit bureaus (with Experian and Equifax). They track the borrowing and repayment history of almost every American adult — mortgages, car loans, credit cards, student loans. They generate credit scores (including VantageScore and FICO variants) that predict the probability of someone defaulting. Asgard pulls a TransUnion report on every applicant to decide: approve or decline? What credit limit? What interest rate? People with higher scores get better terms. TransUnion also provides ongoing monitoring — alerting Asgard if a customer\'s credit profile changes significantly post-approval (e.g., they took on a lot of new debt elsewhere).', analogy:'📋 Analogy: TransUnion is like the reference check you do before hiring someone — except for borrowing money, and they have 20+ years of history on most people.', asgard:'Asgard\'s credit bureau partner for underwriting decisions.', examples:['Experian','Equifax','Nova Credit (for immigrants without US history)'] },
+  finicity: { icon:'🔗', name:'Finicity (Mastercard Open Banking)', tagline:'Lets applicants share their real bank data to prove creditworthiness', body:'Finicity, now owned by Mastercard, is an "open banking" platform. With a user\'s permission, it securely connects to their bank account and pulls transaction data — income, spending patterns, rent payments, utilities. This is valuable for people with thin credit files (recent immigrants, young adults, people who paid cash historically). Instead of rejecting them based on a limited credit score, Asgard can see: "this person earns $5,000/month, pays rent on time, and has $8,000 in savings." Finicity provides the data and analytics to make this work compliantly under FCRA (Fair Credit Reporting Act) requirements.', analogy:'🔍 Analogy: If your credit score is your grade point aasgardge, Finicity shows your actual homework and test papers — a much richer picture of how you\'re really doing.', asgard:'Asgard\'s open banking data partner for enhanced credit decisioning.', examples:['Plaid','MX','Yodlee','Akoya'] },
+  digifi: { icon:'⚙️', name:'DigiFi', tagline:'The application processing engine — automates everything from form fill to decision', body:'DigiFi is a Loan Origination System (LOS) — software that manages the entire credit application workflow. When you apply for a Asgard card, DigiFi: (1) collects your application data, (2) calls Socure to verify your identity, (3) calls TransUnion for your credit report, (4) calls Finicity for bank data, (5) runs Asgard\'s underwriting rules (approve/decline/what limit), (6) sends the decision back — all automatically, in seconds. Without DigiFi, Asgard would need engineers to build this complex orchestration from scratch. DigiFi is open-source at its core and has an "integration marketplace" of pre-built connectors to bureaus and data providers.', analogy:'🏭 Analogy: DigiFi is the factory assembly line. It coordinates all the robots (Socure, TransUnion, Finicity) in the right sequence to produce a credit decision automatically.', asgard:'Asgard\'s loan origination system for processing applications.', examples:['Blend','Plaid (for LOS)','nCino','Finastra'] },
+  zeta: { icon:'🖥️', name:'Zeta Tachyon', tagline:'The modern core card processing platform — the operating system of the credit card', body:'Zeta\'s Tachyon is the most comprehensive partner in the stack. It handles: authorization (approving/declining each swipe), account management (balance tracking, credit limit), billing (statement generation, minimum payment calculation), interest computation, rewards engine, cardholder servicing, card issuance, and the APIs that power Asgard\'s mobile app. Unlike legacy processors (Fiserv, TSYS) that run on decades-old mainframe technology, Zeta is cloud-native, API-first, and built for fintechs. Mastercard has invested in Zeta and they have a 5-year global partnership — over 25 million accounts run on Tachyon globally.', analogy:'🚗 Analogy: If Mastercard is the road and FinWise is the license plate, Zeta is the entire car — engine, transmission, dashboard, GPS, and infotainment system combined.', asgard:'Asgard\'s core card processing platform. The foundation of Asgard\'s entire card operation.', examples:['Fiserv','FIS (Worldpay)','TSYS (Global Payments)','Marqeta','i2c'] },
+  fiserv: { icon:'🏛️', name:'Fiserv / FIS / TSYS', tagline:'Legacy card processors — used by traditional banks, often on 1970s mainframe technology', body:'These are the incumbent card processors used by most traditional banks. Fiserv (which acquired First Data), FIS (which acquired SunGard), and TSYS (acquired by Global Payments) process the vast majority of US credit card transactions. They work — but they\'re built on COBOL mainframe technology from the 1970s-1980s. Adding new features takes months or years. API access is limited. This is exactly why fintechs like Asgard prefer modern processors like Zeta or Marqeta. However, these legacy processors have crucial advantages: massive scale, regulatory relationships built over decades, and the trust of every major bank.', analogy:'🚂 Analogy: These are the freight trains — enormous capacity, incredibly reliable, running on 100-year-old tracks. Zeta is the high-speed rail — faster, more modern, but smaller scale.', asgard:'Not used by Asgard — they chose Zeta\'s modern stack.', examples:['Fiserv (First Data)','FIS','TSYS','Galileo','i2c'] },
+  marqeta: { icon:'🔄', name:'Marqeta', tagline:'Modern card issuing API platform — popular with fintechs and gig economy companies', body:'Marqeta is an alternative to Zeta for modern card issuance. They\'re famous for powering DoorDash, Instacart, Square, and many neobanks. Marqeta specializes in card issuing APIs and real-time transaction controls (you can set very granular rules — e.g., this DoorDash driver\'s card can only be used at specific restaurants). For traditional credit cards, Zeta is more comprehensive. Marqeta is often chosen for prepaid, debit, and commercial card programs where transaction control logic is complex.', analogy:'🎮 Analogy: Marqeta gives you the most programmable, granular control over every transaction rule — think of it as putting a script engine on every card swipe.', asgard:'Not Asgard\'s choice — they went with Zeta.', examples:['Used by: Cash App, DoorDash, Uber, Klarna (for BNPL)'] },
+  featurespace: { icon:'🛡️', name:'Featurespace', tagline:'AI fraud detection — learns your spending DNA and blocks anomalies in real time', body:'Featurespace\'s ARIC Risk Hub is an AI platform for detecting fraud in real time. It uses "Adaptive Behavioral Analytics" — meaning it continuously learns each individual cardholder\'s unique spending patterns. It doesn\'t just look for "known bad" patterns; it detects DEVIATIONS from YOUR normal. So if you always shop in Mumbai and suddenly there\'s a transaction in Frankfurt, ARIC flags it regardless of whether Frankfurt is a "known fraud location." Their platform covers: card fraud, application fraud (fake identities), account takeover (stolen credentials), and money laundering patterns. Visa (not Mastercard) has also partnered with Featurespace for a broader AI fraud platform.', analogy:'🧬 Analogy: Featurespace knows your spending DNA. Any transaction that doesn\'t match your DNA triggers an alarm — even if that transaction pattern has never been seen before.', asgard:'Asgard\'s AI fraud detection engine.', examples:['Sardine','Kount (Equifax)','Sift','Stripe Radar','ThreatMetrix (LexisNexis)'] },
+  metro: { icon:'🏭', name:'Metrocompanies', tagline:'Card manufacturer and fulfillment — the physical card in your wallet', body:'The Metropolitan Companies is a card manufacturing and direct mail fulfillment company. When Asgard approves your application, Metrocompanies receives a digital instruction with your personal card details, prints your physical PVC card (with chip, NFC antenna, magnetic stripe, your name, and card number embossed), packages it with a welcome letter and activation instructions, and mails it to your address within 3-5 business days. Physical cards must meet Mastercard\'s strict specifications (EMV chip standards, NFC standards, physical dimensions, security features). A basic chip card costs $0.90-$1.40 to make; premium metal cards cost $15-25+.', analogy:'🖨️ Analogy: Metrocompanies is the specialized printing press that makes the exact format of card Mastercard requires — secure, chip-enabled, and personalized to you.', asgard:'Asgard\'s card manufacturing and mailing partner.', examples:['IDEMIA','CPI Card Group','Giesecke+Devrient (G+D)','Fiserv Output Solutions'] },
+  awsconnect: { icon:'☎️', name:'AWS Connect', tagline:'Cloud contact center — the phone system behind Asgard\'s customer support', body:'Amazon Connect is a cloud-based contact center platform. It replaces the need for Asgard to build physical call center infrastructure. When you call Asgard\'s customer service line, AWS Connect: routes your call intelligently (IVR menus, intent detection), pulls up your account information from Zeta\'s systems, records the call for quality/compliance, provides AI-powered voice bots for simple queries ("What\'s my balance?"), and connects you to a live agent (from Firstsource). AWS Connect charges per-minute of usage — no upfront infrastructure cost. This pay-as-you-go model is perfect for a startup where call volume is uncertain early on.', analogy:'📞 Analogy: AWS Connect is like renting a fully automated, scalable call center that you only pay for when someone actually calls.', asgard:'Asgard\'s cloud contact center infrastructure.', examples:['Genesys','NICE inContact','Twilio Flex','Five9'] },
+  firstsource: { icon:'👥', name:'Firstsource', tagline:'BPO — the outsourced human team for customer service and debt collections', body:'Firstsource is a Business Process Outsourcing (BPO) company with decades of experience in financial services. They provide Asgard with an outsourced operations team — real agents who handle: complex customer service issues, disputes and chargebacks, fraud claims, account closure requests. Critically, they also handle collections — when cardholders miss payments, Firstsource\'s team reaches out with payment reminders, hardship programs, and repayment plans in a legally compliant, empathetic way. They have specific expertise in credit card collections from working with banks like Barclaycard. Collections is a specialized skill — you need to be firm about recovering money while not violating FDCPA (debt collection rules) and preserving the customer relationship where possible.', analogy:'👔 Analogy: Firstsource is like the outsourced HR + customer relations + accounts receivable department — so Asgard\'s 15-person tech team doesn\'t need to become a 500-person call center.', asgard:'Asgard\'s customer service and collections BPO partner.', examples:['Conduent','Concentrix','WNS','Sutherland','EXL Service'] },
+  alloy: { icon:'🔐', name:'Alloy / Persona', tagline:'KYC orchestration platforms — alternative to Socure', body:'Alloy and Persona are platforms that orchestrate multiple identity verification data sources into a single decision. Instead of building direct integrations to 10 different data providers, a fintech integrates with Alloy or Persona once, and those platforms manage the underlying data sources. They\'re popular with newer fintechs that want flexibility to change underlying vendors without re-engineering their integration. Persona is known for its excellent user-facing identity document verification flow (the UI where you take a selfie and photo of your ID).', analogy:'🎛️ Analogy: If Socure is a complete identity verification solution, Alloy is the control panel that lets you mix and match different identity data sources.', asgard:'Not Asgard\'s choice — they use Socure directly.', examples:['Persona','Jumio','Onfido','Sardine'] },
+  experian: { icon:'📈', name:'Experian / Equifax', tagline:'The other two major credit bureaus alongside TransUnion', body:'The US has three major credit bureaus: TransUnion (Asgard\'s partner), Experian, and Equifax. Mature credit programs often pull from 2-3 bureaus for a more complete picture. Each bureau has slightly different data — a lender that reports to Experian but not TransUnion means your Experian score will differ. Experian also owns the "Boost" product (powered by Finicity) which lets consumers add utility and phone payments to their credit history. Many card programs pull from all three during underwriting to get the most complete risk assessment.', analogy:'📚 Analogy: Like checking someone\'s references at three different previous employers rather than just one.', asgard:'TransUnion is Asgard\'s bureau. Larger programs use all three.', examples:['Experian','Equifax','FICO (provides scoring models)','VantageScore'] },
+  plaid: { icon:'🔌', name:'Plaid', tagline:'Alternative open banking connector to Finicity', body:'Plaid is Finicity\'s main competitor for open banking / bank account connectivity. Plaid connects to 12,000+ US financial institutions and allows users to link their bank accounts to fintech apps. It\'s used by Venmo, Betterment, Acorns, and hundreds of fintechs. For credit decisions, Plaid provides income verification, cash flow data, and asset verification. The choice between Plaid and Finicity often comes down to pricing, coasgardge of specific banks, and the specific data attributes needed.', analogy:'🔌 Analogy: Plaid and Finicity are like two electricians who can wire your house to the power grid — same job, slightly different approaches and pricing.', asgard:'Not Asgard\'s choice — they use Finicity (Mastercard Open Banking).', examples:['MX','Yodlee (Envestnet)','Akoya','Finicity'] },
+  comply: { icon:'🔎', name:'ComplyAdvantage', tagline:'AML/sanctions screening — checking every customer against terrorist watchlists', body:'ComplyAdvantage provides AML (Anti-Money Laundering) screening data and technology. Every credit card applicant must be checked against: OFAC sanctions lists (terrorists, narcotics traffickers), PEP lists (Politically Exposed Persons — government officials who may have higher corruption risk), adverse media databases, and global watchlists. ComplyAdvantage uses AI to do this screening in real time and provides ongoing monitoring — alerting Asgard if a cardholder later appears on a sanctions list. This is legally required under the Bank Secrecy Act.', analogy:'🚨 Analogy: ComplyAdvantage is like the no-fly list check at the airport — but for financial services, checking every customer against global watchlists.', asgard:'Not listed as a Asgard partner, but this function is required — likely handled by Socure or FinWise.', examples:['World-Check (LSEG)','Accuity (now Bankers Almanac)','Dow Jones Risk & Compliance','LexisNexis WorldCompliance'] },
+  fincen: { icon:'⚖️', name:'FinCEN', tagline:'Financial Crimes Enforcement Network — the AML regulator', body:'FinCEN is a bureau of the US Treasury that administers the Bank Secrecy Act. It\'s not a vendor — it\'s a government regulator. FinCEN requires all financial institutions (including FinWise, on behalf of Asgard) to: maintain an AML compliance program, file Suspicious Activity Reports (SARs) when transactions look like money laundering, file Currency Transaction Reports (CTRs) for large cash transactions, and maintain Customer Identification Program (CIP) records. FinCEN maintains the network for receiving and analyzing these reports to detect financial crimes.', analogy:'🏛️ Analogy: FinCEN is the financial equivalent of the FBI — collecting intelligence on suspicious financial activity to fight money laundering and terrorism financing.', asgard:'FinCEN governs Asgard\'s AML obligations through FinWise.', examples:['OFAC (Treasury — sanctions)','FinCEN itself is the regulator'] },
+  cfpb: { icon:'🛡️', name:'CFPB', tagline:'Consumer Financial Protection Bureau — protects cardholders from unfair practices', body:'The CFPB was created in 2010 after the financial crisis specifically to protect consumers in financial products. For Asgard, the CFPB enforces: Truth in Lending Act (TILA) — requires clear APR and fee disclosures; the Credit CARD Act — billing rights, grace periods, penalty fee limits; Equal Credit Opportunity Act — you can\'t discriminate in credit decisions based on race, gender, religion, national origin; Fair Credit Billing Act — dispute rights when you see errors on your statement. The CFPB has the power to examine Asgard\'s practices and fine them for violations. They\'re also increasingly active on AI-based credit decisions, requiring explainability of why an application was denied.', analogy:'⚖️ Analogy: The CFPB is the referee in the credit card game — making sure the rules are fair and companies aren\'t exploiting customers.', asgard:'The CFPB\'s rules directly govern Asgard\'s terms, disclosures, billing, and dispute process.', examples:['Works alongside OCC, FDIC, FTC, state AGs'] },
+  occ: { icon:'🏛️', name:'OCC / Federal Reserve', tagline:'Bank regulators — supervise FinWise, which indirectly governs Asgard', body:'The Office of the Comptroller of the Currency (OCC) supervises nationally chartered banks. The Federal Reserve supervises bank holding companies and enforces key regulations. Neither directly supervises Asgard — but they supervise FinWise Bank, which is Asgard\'s sponsor. Because FinWise is legally responsible for the card program, everything Asgard does must meet FinWise\'s regulators\' standards. The OCC and FDIC have both issued guidance making banks more responsible for their fintech partners — including requiring banks to have right to audit their fintech partners, maintain detailed oversight programs, and be able to wind down fintech relationships without harming consumers.', analogy:'👮 Analogy: The OCC is the safety inspector who visits the building\'s foundation (FinWise). If the foundation fails inspection, the whole building (including Asgard) comes down.', asgard:'OCC supervises FinWise, which in turn oversees Asgard\'s compliance.', examples:['OCC','Federal Reserve','FDIC','State banking departments'] },
+  visa: { icon:'💳', name:'Visa', tagline:'The alternative to Mastercard — the world\'s largest card network by transaction volume', body:'Visa is Mastercard\'s main global competitor. Visa processes more transactions globally than Mastercard. The choice between Visa and Mastercard for a new card program depends on: (1) which network the processor (Zeta, in Asgard\'s case) has the best relationship with — Mastercard has invested in Zeta, making it a natural choice; (2) negotiated economics — which network offers better rates for a startup; (3) feature access — Mastercard\'s "Send" platform and Mastercard Open Banking (Finicity) integrate tightly. Most consumers don\'t care which network their card uses — both are accepted almost everywhere.', analogy:'🏎️ Analogy: Visa and Mastercard are like Toyota and Honda — both excellent, both everywhere, and most people choose based on specific model/deal rather than brand alone.', asgard:'Asgard chose Mastercard, likely due to Mastercard\'s investment in Zeta.', examples:['American Express (also issuer + network)','Discover (also issuer + network)'] },
+  sardine: { icon:'🐟', name:'Sardine', tagline:'AI fraud, compliance & credit risk platform — covers fraud AND compliance in one', body:'Sardine is a newer, AI-first platform that covers fraud detection, device intelligence, AML compliance, and even credit underwriting signals — all in one platform. It\'s a potential alternative to Featurespace for fraud detection and to some compliance tools. Sardine raised $70M in 2025 led by Activant Capital, with Andreessen Horowitz, Google Ventures, and Experian Ventures participating. It\'s particularly strong in detecting device-level risk signals (the specific phone/computer used) which is important for digital-first card applications where there\'s no in-person verification.', analogy:'🔭 Analogy: Sardine is like a Swiss Army knife for fraud and compliance — one tool that covers multiple jobs that previously required multiple vendors.', asgard:'Not confirmed as Asgard\'s partner but a strong alternative to Featurespace.', examples:['Featurespace (Asgard\'s choice)','Kount','Sift','ThreatMetrix'] },
+  kount: { icon:'🎯', name:'Kount / Sift', tagline:'Transaction risk scoring — real-time machine learning risk scores', body:'Kount (owned by Equifax) and Sift are real-time fraud risk scoring platforms. For every transaction, they generate a risk score from 0-100 based on hundreds of signals. Card issuers use these scores alongside Featurespace-style behavioral analytics to make faster, more accurate fraud decisions. Sift is particularly popular in e-commerce and digital goods fraud prevention. Kount\'s integration with Equifax provides access to rich identity and credit bureau data to contextualize risk.', analogy:'🌡️ Analogy: Kount is the fraud thermometer — it gives you a precise temperature reading of how risky any given transaction is.', asgard:'Not listed as a Asgard partner.', examples:['Featurespace (Asgard\'s choice)','Sardine','Stripe Radar','Riskified'] },
+  credit_facility: { icon:'💰', name:'Credit Facility / Venture Debt', tagline:'The capital that funds the actual loans — this is what Asgard lends to cardholders', body:'This is the most capital-intensive and often least understood aspect of credit card companies. Every dollar a cardholder charges to their Asgard card is a dollar Asgard (and FinWise) must have available to pay the merchant. With even 10,000 customers aasgardging $2,000 in balances, Asgard needs $20M of capital just to fund those balances. This capital comes from: (1) venture debt / credit facility from specialized lenders (Victory Park Capital, Atalaya, Waterfall Asset Management are examples), (2) FinWise\'s own balance sheet contribution, (3) eventually, securitization — selling bundles of credit card receivables to institutional investors. Brex needed $57M+ in venture funding partly because of this capital need. Cardless raised $170M total. The capital cost is why credit card programs are expensive to scale.', analogy:'🏦 Analogy: Running a credit card program requires the same basic activity as banking — you need to have money available to lend before you can earn interest on it. Asgard must raise this capital separately from its operating budget.', asgard:'Asgard likely has a credit facility from FinWise (who holds balances on their balance sheet) plus may need external debt capital as they scale.', examples:['Victory Park Capital','Atalaya Capital','Waterfall Asset Management','Benefit Street Partners'] },
+  securitization: { icon:'📦', name:'ABS / Securitization', tagline:'Selling bundled credit card receivables to free up capital — used by mature programs', body:'As a credit card program matures, it typically moves from keeping all balances on its own balance sheet to securitization. This means bundling thousands of credit card balances into a financial product (an Asset-Backed Security, or ABS) and selling it to institutional investors like pension funds and insurance companies. The investors get monthly interest payments (from cardholders\' APR payments); Asgard gets cash back that it can use to fund more new cardholders. Capital One, Discover, and all major card issuers do this constantly. It\'s what enables credit card programs to scale to millions of customers without infinite equity capital. Asgard is too early for this — but it\'s the endgame of their capital strategy.', analogy:'🏠 Analogy: Securitization is like a mortgage-backed security — instead of mortgages, you bundle credit card debts. Investors buy them for steady yield; the issuer gets cash to make more loans.', asgard:'Not yet applicable to Asgard — this is a later-stage capital structure.', examples:['Capital One\'s securitization trust','Discover ABS programs'] },
+  idemia: { icon:'🖨️', name:'IDEMIA / CPI Card Group', tagline:'Alternative card manufacturers — especially for premium/metal cards', body:'IDEMIA is the world\'s largest smart card manufacturer (they also make passports and national ID cards). CPI Card Group is a major US-based card manufacturer. For premium products like metal credit cards (think Apple Card\'s titanium card), manufacturers like CPI are required — the manufacturing process for metal cards is completely different from PVC. Card manufacturing is a highly specialized, security-sensitive industry. Manufacturers must be certified by Mastercard and Visa to produce cards that meet network specifications for chip placement, contactless antenna, and physical security features.', analogy:'🏭 Analogy: Card manufacturers are like certified government contractors — they must meet strict specs, pass security audits, and produce millions of identical, secure items.', asgard:'Metrocompanies is Asgard\'s choice for card manufacturing.', examples:['IDEMIA','CPI Card Group','Giesecke+Devrient','HID Global'] },
+  jumio: { icon:'📷', name:'Jumio', tagline:'Document & biometric verification — photo ID + selfie matching for high-assurance KYC', body:'Jumio specializes in document verification (scanning driver\'s licenses, passports) and biometric matching (taking a selfie and comparing to the ID photo). This is called "liveness detection" — confirming the applicant is a real, live person and matches their ID document. While Socure can verify identity through data alone, Jumio (and competitors like Onfido) add a visual verification layer. This is particularly important for higher-risk applicants or when regulatory requirements mandate enhanced due diligence. The combination of data-based KYC (Socure) and document/biometric verification (Jumio) provides the strongest identity assurance.', analogy:'📸 Analogy: Socure checks your records. Jumio checks your face. Together they\'re the two-factor authentication of identity verification.', asgard:'Not listed as a Asgard partner — Socure handles KYC for them.', examples:['Onfido','ID.me','Persona','Veriff'] },
+  marqeta_dec: { icon:'🔄', name:'Marqeta / Blend (for LOS)', tagline:'Alternative origination and issuing platforms', body:'Marqeta offers not just card issuing but also decision-making tools for modern credit programs. Blend is a cloud-based platform originally built for mortgage applications but expanded into consumer credit and card programs. Some fintechs choose Marqeta\'s end-to-end platform (origination + issuing) rather than using separate vendors like DigiFi + Zeta. The tradeoff is flexibility vs. simplicity. Asgard chose the best-of-breed approach (DigiFi for origination, Zeta for processing) rather than an integrated single-vendor platform.', analogy:'🏪 Analogy: Blend and Marqeta are like department stores — one-stop shops. DigiFi + Zeta are like buying the best specialist products from separate shops.', asgard:'Not Asgard\'s choice — they use DigiFi + Zeta as separate best-of-breed vendors.', examples:['Blend','Temenos','nCino','Finflux'] }
 };
 
 let activeDetailId = null;
@@ -779,9 +779,9 @@ function showDetail(id) {
   document.getElementById('d-body').textContent = d.body;
   document.getElementById('d-analogy').textContent = '💡 ' + d.analogy;
 
-  const veraEl = document.getElementById('d-vera');
-  if (d.vera) { veraEl.style.display = 'block'; veraEl.textContent = '🔵 Vera context: ' + d.vera; }
-  else { veraEl.style.display = 'none'; }
+  const asgardEl = document.getElementById('d-asgard');
+  if (d.asgard) { asgardEl.style.display = 'block'; asgardEl.textContent = '🔵 Asgard context: ' + d.asgard; }
+  else { asgardEl.style.display = 'none'; }
 
   const exEl = document.getElementById('d-examples');
   if (d.examples && d.examples.length) {
